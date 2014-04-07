@@ -1,0 +1,52 @@
+img{
+	width: 200px;
+	height: 190px;
+	position:absolute;
+}
+
+.Marge_Simpson{
+	left:170px;
+}
+
+.Bart_Simpson{
+	width: 150px;
+	left: 320px;
+	top: 25px;
+}
+
+.Lisa_Simpson{
+	width: 120px;
+	height: 170px;
+	left: 480px;
+	top: 45px;
+}
+
+.Maggie_Simpson{
+	height:170px;
+	width: 150px;
+	left: 600px;
+	top:50px;
+}
+
+div.character{
+	position: absolute;
+}
+
+div.season{
+	position: absolute;
+	left:270px;
+	top:240px;
+}
+
+div.locations{
+	position: absolute;
+	left: 550px;
+}
+
+.selection{
+	position: absolute;
+	border: 1px solid black;
+	width: 400px;
+	height: 270px;
+	left: 800px;
+}
