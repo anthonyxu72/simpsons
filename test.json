@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"node":0,"name":"Homer"},
+		{"node":1,"name":"Margie"},
+		{"node":2,"name":"Lisa"},
+		{"node":3,"name":"Bart"},
+		{"node":4,"name":"Maggie"},
+		{"node":5,"episode":"Simpsons Roasting on an Open Fire"},
+		{"node":6,"name":"Bart the Genius"},
+		{"node":7,"name":"There's No Disgrace Like Home"},
+		{"node":8,"name":"Bart the General"},
+		{"node":9,"name":"Moaning Lisa"},
+		{"node":10,"name":"The Call of the Simpsons"},
+		{"node":11,"name":"The Telltale Head"}
+	],
+	"links":[
+		{"source":0,"target":5,"value":2},
+		{"source":0,"target":6,"value":2},
+		{"source":0,"target":7,"value":2},
+		{"source":0,"target":8,"value":2},
+		{"source":0,"target":9,"value":2},
+		{"source":0,"target":10,"value":2},
+		{"source":0,"target":11,"value":2},					
+	]
+}
