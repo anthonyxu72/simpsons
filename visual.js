@@ -3,4 +3,7 @@ $(document).ready(function(){
 	$(".chosen-select").chosen();
 })
 
-var data = ["Homer", "Lisa", ""]
+var svg = d3.select("body").append("svg")
+				.attr("width", 400)
+				.attr("height", 500)
+				.attr("transform", "translate(0, 500)")
