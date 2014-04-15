@@ -5,27 +5,19 @@ img{
 }
 
 .Marge_Simpson{
-	left:170px;
+	left:90px;
 }
 
 .Bart_Simpson{
-	width: 150px;
-	left: 320px;
-	top: 25px;
+	left: 170px;
 }
 
 .Lisa_Simpson{
-	width: 120px;
-	height: 170px;
-	left: 480px;
-	top: 45px;
+	left: 250px;
 }
 
 .Maggie_Simpson{
-	height:170px;
-	width: 150px;
-	left: 600px;
-	top:50px;
+	left: 330px;
 }
 
 div.character{
