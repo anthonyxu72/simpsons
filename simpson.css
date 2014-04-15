@@ -1,6 +1,6 @@
 img{
-	width: 200px;
-	height: 190px;
+	width: 70px;
+	height: 70px;
 	position:absolute;
 }
 
@@ -49,4 +49,27 @@ div.locations{
 	width: 400px;
 	height: 270px;
 	left: 800px;
+}
+
+svg{
+	position:absolute;
+	top:300px;
+}
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .5;
 }
