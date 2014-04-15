@@ -74,7 +74,11 @@ var data = {
 		{"source":4,"target":11,"value":2},	
 		
 ]};
-	
+
+d3.json("chars.json",function(data){
+	console.log(data)
+})
+
 sankey
    .nodes(data.nodes)
    .links(data.links)
