@@ -20,61 +20,8 @@ var sankey = d3.sankey()
 					.size([780-20 ,700-20])
 
 var path = sankey.link();
-
-// var data = {
-// 	"nodes":[
-// 		{"node":0,"name":"Homer"},
-// 		{"node":1,"name":"Margie"},
-// 		{"node":2,"name":"Lisa"},
-// 		{"node":3,"name":"Bart"},
-// 		{"node":4,"name":"Maggie"},
-// 		{"node":5,"name":"Simpsons Roasting on an Open Fire"},
-// 		{"node":6,"name":"Bart the Genius"},
-// 		{"node":7,"name":"There's No Disgrace Like Home"},
-// 		{"node":8,"name":"Bart the General"},
-// 		{"node":9,"name":"Moaning Lisa"},
-// 		{"node":10,"name":"The Call of the Simpsons"},
-// 		{"node":11,"name":"The Telltale Head"}]
-// 		,
-// 	"links":[
-// 		{"source":0,"target":5,"value":2},
-// 		{"source":0,"target":6,"value":2},
-// 		{"source":0,"target":7,"value":2},
-// 		{"source":0,"target":8,"value":2},
-// 		{"source":0,"target":9,"value":2},
-// 		{"source":0,"target":10,"value":2},
-// 		{"source":0,"target":11,"value":2},
-// 		{"source":1,"target":5,"value":2},					
-// 		{"source":1,"target":6,"value":2},					
-// 		{"source":1,"target":7,"value":2},					
-// 		{"source":1,"target":8,"value":2},					
-// 		{"source":1,"target":9,"value":2},
-// 		{"source":1,"target":10,"value":2},										
-// 		{"source":1,"target":11,"value":2},
-// 		{"source":2,"target":5,"value":2},					
-// 		{"source":2,"target":6,"value":2},					
-// 		{"source":2,"target":7,"value":2},					
-// 		{"source":2,"target":8,"value":2},					
-// 		{"source":2,"target":9,"value":2},
-// 		{"source":2,"target":10,"value":2},										
-// 		{"source":2,"target":11,"value":2},						
-// 		{"source":3,"target":5,"value":2},					
-// 		{"source":3,"target":6,"value":2},					
-// 		{"source":3,"target":7,"value":2},					
-// 		{"source":3,"target":8,"value":2},					
-// 		{"source":3,"target":9,"value":2},
-// 		{"source":3,"target":10,"value":2},										
-// 		{"source":4,"target":11,"value":2},	
-// 		{"source":4,"target":5,"value":2},					
-// 		{"source":4,"target":6,"value":2},					
-// 		{"source":4,"target":7,"value":2},					
-// 		{"source":4,"target":8,"value":2},					
-// 		{"source":4,"target":9,"value":2},
-// 		{"source":4,"target":10,"value":2},										
-// 		{"source":4,"target":11,"value":2},	
-// 		
-// ]};
-
+var items = [];
+	
 d3.json("test.json",function(graph){
 	sankey
 	   .nodes(graph.nodes)
