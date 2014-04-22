@@ -21,5 +21,5 @@ function searchCharacters(chars) {
 	});
 	characterMatrixArray['nodes'] = nodesArray;
 	characterMatrixArray['links'] = linksArray;
-	return characterMatrixArray;
+	console.log(characterMatrixArray);
 }
