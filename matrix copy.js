@@ -17,11 +17,4 @@ function searchCharacters(chars) {
 		}
 	
 	});
-<<<<<<< HEAD
-	return characterMatrixArray;
-=======
-	characterMatrixArray['nodes'] = nodesArray;
-	characterMatrixArray['links'] = linksArray;
-	console.log(characterMatrixArray);
->>>>>>> e116edd0c0bb32bc60f8fd7ed569d0938ec26691
 }
