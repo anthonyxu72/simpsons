@@ -14,12 +14,15 @@ function searchCharacters(chars) {
 					}
 				}
 			}
-
 		}
-
-
+		characterMatrixArray['nodes'] = nodesArray;
+		characterMatrixArray['links'] = linksArray;
+		return characterMatrixArray;
 	});
-	characterMatrixArray['nodes'] = nodesArray;
-	characterMatrixArray['links'] = linksArray;
-	console.log(characterMatrixArray);
+	//console.log(characterMatrixArray);
+}
+
+function returnArray(array){
+	console.log(array)
+	return array;
 }
