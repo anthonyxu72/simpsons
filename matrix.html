@@ -10,18 +10,6 @@
 
 		var characterSearch = new Array("The Rich Texan", "Cookie Kwan", "Lisa Simpson",
 								"Abraham Simpson", "Nedward Flanders, Sr.");
-
-		var svg = d3.select("body").append("svg")
-						.attr("width", 800)
-						.attr("height", 700)
-						.attr("transform", "translate(0, 500)")
-
-		var sankey = d3.sankey()
-							.nodeWidth(36)
-							.nodePadding(40)
-							.size([780-20 ,700-20])
-
-		var path = sankey.link();
 		
 		console.log(searchCharacters(characterSearch))
 		

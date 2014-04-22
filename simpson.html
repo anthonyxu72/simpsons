@@ -17,7 +17,941 @@
 		<img src="Lisa_Simpson.jpeg" alt="Lisa Simpson" class="Lisa_Simpson"></img>
 		<img src="Maggie_Simpson.jpeg" alt="Maggie Simpson" class="Maggie_Simpson"></img>
 		<div class="character">
-			<select data-placeholder="Choose a character..." style="width:250px;" multiple class="chosen-select"></select>
+			<script type="text/javascript">
+				$(function(){
+    				$(".chosen-select").chosen({ max_selected_options: 5 });
+					$(".chosen-select").chosen().change(function(e, params){
+ 						var selectedChars = $(".chosen-select").chosen().val();
+ 						console.log(selectedChars);
+					});
+				});	
+			</script>
+			
+			<select data-placeholder="Choose a character..." style="width:250px;" multiple class="chosen-select">
+					<option value=""></option>
+					<option>'Blow the Horn' Kid</option>
+					<option>Charles Montgomery Burns</option>
+					<option>George Bush</option>
+					<option>Barney Gumble</option>
+					<option>Julius Hibbert</option>
+					<option>Snake Jailbird</option>
+					<option>Lou</option>
+					<option>Horatio McCallister</option>
+					<option>Hans Moleman</option>
+					<option>Santa's Little Helper</option>
+					<option>Bart Simpson</option>
+					<option>Lisa Simpson</option>
+					<option>Marge Simpson</option>
+					<option>Seymour Skinner</option>
+					<option>Milhouse Van Houten</option>
+					<option>Clancy Wiggum</option>
+					<option>Boy with shades</option>
+					<option>Gary Chalmers</option>
+					<option>Chuck (student)</option>
+					<option>Agnes Flanders</option>
+					<option>Nedward Flanders, Sr.</option>
+					<option>Girl with glasses</option>
+					<option>Jaffee</option>
+					<option>Jimbo Jones</option>
+					<option>Leopold</option>
+					<option>Lewis Clark</option>
+					<option>Lewis' lookalike</option>
+					<option>Richard</option>
+					<option>Gerald Samson</option>
+					<option>Sara (Student)</option>
+					<option>Agnes Skinner</option>
+					<option>Smug Girl</option>
+					<option>Sophie Jensen</option>
+					<option>Cletus Spuckler</option>
+					<option>Wanda</option>
+					<option>White-Haired Girl</option>
+					<option>2nd Grade Sherri and Terri Lookalike</option>
+					<option>Bart-soundalike Construction Foreman</option>
+					<option>Jasper Beardly</option>
+					<option>Database</option>
+					<option>Jonathan Frink</option>
+					<option>Otto Mann</option>
+					<option>Nelson Muntz</option>
+					<option>Photo Girl</option>
+					<option>Ruth Powers</option>
+					<option>Abraham Simpson</option>
+					<option>Moe Szyslak</option>
+					<option>Tanya</option>
+					<option>Allison Taylor</option>
+					<option>Kearney Zzyzwicz</option>
+					<option>Carl Carlson</option>
+					<option>JosÃ© Flanders</option>
+					<option>Ned Flanders</option>
+					<option>Ham</option>
+					<option>Bernice Hibbert</option>
+					<option>Larry (barfly)</option>
+					<option>Lenny Leonard</option>
+					<option>Troy McClure</option>
+					<option>Apu Nahasapeemapetilon</option>
+					<option>Janey Powell</option>
+					<option>Sam (barfly)</option>
+					<option>Sherri Mackleberry</option>
+					<option>Terri Mackleberry</option>
+					<option>Ralph Wiggum</option>
+					<option>Audrey McConnell's Students</option>
+					<option>Buck-toothed boy</option>
+					<option>Fat Tony</option>
+					<option>Long-haired girl</option>
+					<option>C. W. McAllister</option>
+					<option>Tyler (Male 3rd Grader)</option>
+					<option>Tyler's Brother</option>
+					<option>Rainier Wolfcastle</option>
+					<option>Brown-haired boy</option>
+					<option>Girl with necklace</option>
+					<option>Gil Gunderson</option>
+					<option>Lisa's Classmate 1</option>
+					<option>Bumblebee Man</option>
+					<option>Audrey McConnell's Student 3</option>
+					<option>Becky (Student)</option>
+					<option>Wendell Borton</option>
+					<option>Craig</option>
+					<option>Herman Hermann</option>
+					<option>Adrian Belew</option>
+					<option>Buck-toothed girl</option>
+					<option>Charlie (SNPP)</option>
+					<option>Melvin Van Horne</option>
+					<option>Mrs. Powell (Janey's Mother)</option>
+					<option>Nina Skalka</option>
+					<option>The Yes Guy</option>
+					<option>Girl playing soccer</option>
+					<option>Howard</option>
+					<option>Dewey Largo</option>
+					<option>Cecile Shapiro</option>
+					<option>Audrey McConnell's Student 1</option>
+					<option>Audrey McConnell's Student 2</option>
+					<option>Belle (senior)</option>
+					<option>Bashir bin Laden</option>
+					<option>Boy with Bangs</option>
+					<option>Boy with glasses</option>
+					<option>Brown-haired girl</option>
+					<option>Donald</option>
+					<option>Girl with ponytail</option>
+					<option>Gloria's Younger Son</option>
+					<option>Inga</option>
+					<option>Jenny</option>
+					<option>Major Preston</option>
+					<option>Morgan (3rd Grader)</option>
+					<option>Rafael</option>
+					<option>Sam (senior)</option>
+					<option>Shauna</option>
+					<option>Tyler (Female 3rd Grader)</option>
+					<option>Tyler's Sister</option>
+					<option>2nd Grade Lewis lookalike</option>
+					<option>Nigel Bakerbutcher</option>
+					<option>The Be Sharps</option>
+					<option>Coward</option>
+					<option>Dakota (Orange)</option>
+					<option>Duffman</option>
+					<option>Duffman's daughter</option>
+					<option>Queen Elizabeth II</option>
+					<option>Gloria (White Christmas Blues)</option>
+					<option>Gloria's Husband</option>
+					<option>Gloria's Older Son</option>
+					<option>Kyle (3rd Grader)</option>
+					<option>Megan</option>
+					<option>Ms. Dubinsky</option>
+					<option>Nick Riviera</option>
+					<option>Spider-Man</option>
+					<option>Springfield Station Man</option>
+					<option>Mrs. Vanderbilt</option>
+					<option>Gloria's Daughter</option>
+					<option>Rupert Murdoch (character)</option>
+					<option>Martin Prince, Sr.</option>
+					<option>Angry Dad</option>
+					<option>Elton John (character)</option>
+					<option>Randy Newman</option>
+					<option>WALLÂ·E</option>
+					<option>Ashley (3rd Grader)</option>
+					<option>'Where the Red fern Grows' 5th grader</option>
+					<option>Binky</option>
+					<option>Cora</option>
+					<option>Fun Homer</option>
+					<option>Matt Groening (character)</option>
+					<option>Intellectual Homer</option>
+					<option>Justin</option>
+					<option>Justin's father</option>
+					<option>Serious Homer</option>
+					<option>Stavros</option>
+					<option>Upward Bound director</option>
+					<option>Cool Mom 1</option>
+					<option>Cool Mom 2</option>
+					<option>Cool mom 3</option>
+					<option>Danny</option>
+					<option>Husband of Cool Mom 1</option>
+					<option>Husband of Cool Mom 2</option>
+					<option>Husband of Cool Mom 3</option>
+					<option>Jeffrey Albertson</option>
+					<option>Jessica Lovejoy</option>
+					<option>Mike's Students</option>
+					<option>Krusty the Clown</option>
+					<option>Martin Prince</option>
+					<option>Plopper</option>
+					<option>Dolph Starbeam</option>
+					<option>Timothy Lovejoy, Jr.</option>
+					<option>'N Sync (character)</option>
+					<option>Alice Glick</option>
+					<option>Helen Lovejoy</option>
+					<option>Joe Quimby</option>
+					<option>Jebediah Springfield</option>
+					<option>Town Jubilation Committee</option>
+					<option>Sylvia Winfield</option>
+					<option>Black Teacher</option>
+					<option>E-mail</option>
+					<option>Sherri and Terri's mother</option>
+					<option>Roy Snyder</option>
+					<option>Gary Coleman (character)</option>
+					<option>Emma</option>
+					<option>French Chef</option>
+					<option>Funzo</option>
+					<option>Jim Hope</option>
+					<option>Cookie Kwan</option>
+					<option>Milo</option>
+					<option>Mrs. Zzyzwicz</option>
+					<option>Strawberry</option>
+					<option>The Thing</option>
+					<option>Dr. Velimirovic</option>
+					<option>Elmo</option>
+					<option>Mrs. Muntz</option>
+					<option>Rex (Bart of Darkness)</option>
+					<option>Ashley</option>
+					<option>Homer's clones</option>
+					<option>Number 2</option>
+					<option>Francine Rhenquist</option>
+					<option>Ling Bouvier</option>
+					<option>Blinky</option>
+					<option>Jitney Spuckler</option>
+					<option>Whitney Spuckler</option>
+					<option>Frankie the Squealer</option>
+					<option>Adam</option>
+					<option>Clancy Bouvier</option>
+					<option>Female Twin</option>
+					<option>Kevin (Stealing First Base)</option>
+					<option>Male Twin</option>
+					<option>Howland Simpson</option>
+					<option>Virgil Simpson</option>
+					<option>Dahlia Brinkley</option>
+					<option>Doug (nerd)</option>
+					<option>Gary (nerd)</option>
+					<option>Britney Brockman</option>
+					<option>Cregg Demon</option>
+					<option>Cregg Demon's son</option>
+					<option>Dr. Hibbert's Daughter</option>
+					<option>Dr. Hibbert's Second Son</option>
+					<option>Maya</option>
+					<option>Cool kid</option>
+					<option>Coach Krupt</option>
+					<option>Audrey McConnell</option>
+					<option>Fit Tony</option>
+					<option>Onward Christian Schoolboys Academy teacher</option>
+					<option>Becky's Mother</option>
+					<option>The Grumple</option>
+					<option>Birthday Spuckler</option>
+					<option>Yeti</option>
+					<option>Rod Flanders</option>
+					<option>Huell Howser (character)</option>
+					<option>Martha Prince</option>
+					<option>Waylon Smithers, Jr.</option>
+					<option>White Weasel</option>
+					<option>Eleanor Abernathy</option>
+					<option>Annette</option>
+					<option>Art teacher</option>
+					<option>Robert Terwilliger</option>
+					<option>Clifford Burns</option>
+					<option>Todd Flanders</option>
+					<option>Groundskeeper Willie</option>
+					<option>Mr. Rhenquist</option>
+					<option>Mrs. Rhenquist</option>
+					<option>Brandine Spuckler</option>
+					<option>Sarah Wiggum</option>
+					<option>Charcoal Briquette</option>
+					<option>Kumiko</option>
+					<option>Stan Lee</option>
+					<option>Mr. Clark</option>
+					<option>Mrs. Clark</option>
+					<option>Old King Coal</option>
+					<option>Petroleus Rex</option>
+					<option>Radioactive Man (character)</option>
+					<option>Mr. Taylor</option>
+					<option>Black Weasel</option>
+					<option>Mr. Black</option>
+					<option>Sadruddin Mahbaradad</option>
+					<option>Kent Brockman</option>
+					<option>Old Jewish Man</option>
+					<option>Stampy</option>
+					<option>Alex Trebek (character)</option>
+					<option>Ms. Albright</option>
+					<option>Jesus Christ</option>
+					<option>Kearney Zzyzwicz, Jr.</option>
+					<option>The Rich Texan</option>
+					<option>Shary Bobbins</option>
+					<option>Disco Stu</option>
+					<option>Cosine</option>
+					<option>Dr. Octopus</option>
+					<option>Brody McKenna</option>
+					<option>Alaska Nebraska</option>
+					<option>Maggie Simpson</option>
+					<option>Alex Whitney</option>
+					<option>Elizabeth Hoover</option>
+					<option>Edna Krabappel</option>
+					<option>Sherri and Terri's father</option>
+					<option>Llewellyn Sinclair</option>
+					<option>Kirk Van Houten</option>
+					<option>Report Card</option>
+					<option>Dylan Spuckler</option>
+					<option>Maude Flanders</option>
+					<option>Taylor Spuckler</option>
+					<option>Patty Bouvier</option>
+					<option>Selma Bouvier</option>
+					<option>Eddie</option>
+					<option>Doris Freedman</option>
+					<option>Jeremy Jailbird</option>
+					<option>Lucas Bortner</option>
+					<option>50 Cent (character)</option>
+					<option>Alcatraaz</option>
+					<option>Bus 22 Driver</option>
+					<option>Lurleen Lumpkin</option>
+					<option>Abbie Simpson</option>
+					<option>Corey Masterson</option>
+					<option>Tony Blair (character)</option>
+					<option>Jacqueline Bouvier</option>
+					<option>R2-D2</option>
+					<option>Edwina</option>
+					<option>Abby</option>
+					<option>Abigail</option>
+					<option>Candy</option>
+					<option>Ooda</option>
+					<option>Laura Powers</option>
+					<option>Ron</option>
+					<option>Shasta</option>
+					<option>Mojo the Helper Monkey</option>
+					<option>Snowball V</option>
+					<option>King Henry VIII</option>
+					<option>Ludwig van Beethoven</option>
+					<option>Margerine of Aragon</option>
+					<option>Wolfgang Amadeus Mozart</option>
+					<option>Bud Armstrong</option>
+					<option>Mario</option>
+					<option>Coach Clay Roberts</option>
+					<option>Angelica</option>
+					<option>Nana Sophie Mussolini</option>
+					<option>Louie (mafia)</option>
+					<option>Louie (Midnight Towboy)</option>
+					<option>Andy Dick</option>
+					<option>Sheila Chow</option>
+					<option>Mr. Teeny</option>
+					<option>Dwight Diddlehopper</option>
+					<option>Dwight Diddlehopper's Accomplice</option>
+					<option>Cupcake Kid</option>
+					<option>European Female Moe</option>
+					<option>List of Star Wars Characters</option>
+					<option>Sherri and Terri's sister</option>
+					<option>Ian (Very Tall Man)</option>
+					<option>Jack Marley</option>
+					<option>Poppy</option>
+					<option>Bart's Elder Son</option>
+					<option>Bart's Younger Son</option>
+					<option>District Aliens</option>
+					<option>Maude Flanders (ghost)</option>
+					<option>Flight Attendant (future)</option>
+					<option>General Hospital Receptionist (future)</option>
+					<option>Heathrow Teleport Departures Worker</option>
+					<option>Martians</option>
+					<option>Medbot</option>
+					<option>Patty's Lovebot</option>
+					<option>Selma's Lovebot</option>
+					<option>Springfield General Hospital Nurse (future)</option>
+					<option>Talking Tree</option>
+					<option>The Nahasapeemapetilon Octuplets' Octuplets</option>
+					<option>Zia Simpson</option>
+					<option>Ralph Nader</option>
+					<option>God</option>
+					<option>Aileen</option>
+					<option>Cletus (I Married Marge)</option>
+					<option>Captain Lance Murdock</option>
+					<option>Shotgun Pete</option>
+					<option>Airport Stair Bot</option>
+					<option>ATM Bot</option>
+					<option>Bestimus Muchos</option>
+					<option>Coffee Machine Bot</option>
+					<option>Charlton Heston</option>
+					<option>Hot Dog Oven Bot</option>
+					<option>Malibu Stacy</option>
+					<option>Melody</option>
+					<option>Squishee Machine Bot</option>
+					<option>Drederick Tatum</option>
+					<option>Martha Quimby</option>
+					<option>The Parson</option>
+					<option>Jeremy Freedman</option>
+					<option>Luann Van Houten</option>
+					<option>Lyla</option>
+					<option>Lindsey Naegle</option>
+					<option>Rachel Maddow (character)</option>
+					<option>Langdon Alger</option>
+					<option>Tyler's Father</option>
+					<option>Amendment To Be</option>
+					<option>Roger Meyers, Jr.</option>
+					<option>Theodore Roosevelt</option>
+					<option>Amish Man</option>
+					<option>Busker</option>
+					<option>Chili Man</option>
+					<option>Ice Cream Man</option>
+					<option>Pool Shark Salesman</option>
+					<option>Amy</option>
+					<option>Anastasia</option>
+					<option>Ernst</option>
+					<option>Gunter</option>
+					<option>Ancient Mystic Society of No Homers</option>
+					<option>Arnie Pye's Pilot</option>
+					<option>Anderson</option>
+					<option>Cadet leader</option>
+					<option>Franklin</option>
+					<option>Platt</option>
+					<option>Poetry instructor</option>
+					<option>Rangemaster</option>
+					<option>The Commandant</option>
+					<option>Andy Warhol</option>
+					<option>Astrid Weller</option>
+					<option>Antarctic Researcher 1</option>
+					<option>Antarctic Researcher 2</option>
+					<option>Bruno Drundridge</option>
+					<option>Adolf Hitler</option>
+					<option>Antonowski</option>
+					<option>Retirement Castle administrator</option>
+					<option>Walsh</option>
+					<option>Anya</option>
+					<option>General Krull</option>
+					<option>Scoey</option>
+					<option>Aquaman</option>
+					<option>Arthur Crandall</option>
+					<option>G.B. Shaw</option>
+					<option>Gabbo</option>
+					<option>Enrico Irritazio</option>
+					<option>Princess Kashmir</option>
+					<option>Arcade Cashier</option>
+					<option>Arcade Kid</option>
+					<option>Crowd</option>
+					<option>Bleeding Gums Murphy</option>
+					<option>Freddy Krueger</option>
+					<option>Fred Kanneke</option>
+					<option>Bob Arnold</option>
+					<option>Model U.N. Club</option>
+					<option>Mr. Zzyzwicz</option>
+					<option>Bender Bending RodrÃ­guez</option>
+					<option>Benjamin (nerd)</option>
+					<option>Estelle Beardly</option>
+					<option>Roz Davis</option>
+					<option>Smilin' Joe Fission</option>
+					<option>Joey Crusher</option>
+					<option>Amber Dempsey</option>
+					<option>Adil Hoxha</option>
+					<option>Ice Cream Lady</option>
+					<option>Lowblow</option>
+					<option>Celeste</option>
+					<option>Stacy Lovell</option>
+					<option>Mary Bailey</option>
+					<option>Dakota (Blond)</option>
+					<option>Bighorn sheep</option>
+					<option>Frank Grimes</option>
+					<option>Donny (The Debarted)</option>
+					<option>Ms. Phipps</option>
+					<option>Robert Pinsky (character)</option>
+					<option>Buddy Holly</option>
+					<option>Richie Valens</option>
+					<option>Lois Pennycandy</option>
+					<option>Cloisters Academy Headmaster</option>
+					<option>Chemistri Guy</option>
+					<option>Meth Guy</option>
+					<option>Sonic the Hedgehog</option>
+					<option>The Swedish Chef</option>
+					<option>Mona Simpson</option>
+					<option>Mr. Bergstrom</option>
+					<option>Bill Clinton</option>
+					<option>Count Dracula</option>
+					<option>Hubert Wong</option>
+					<option>Isabel Gutierrez</option>
+					<option>Ãœter ZÃ¶rker</option>
+					<option>Kang</option>
+					<option>Kodos</option>
+					<option>Princess Penelope</option>
+					<option>Hank Scorpio</option>
+					<option>Legs</option>
+					<option>Don Vittorio DiMaggio</option>
+					<option>Herbert Powell</option>
+					<option>Jack Bauer</option>
+					<option>Stefane August</option>
+					<option>Harlan Dondelinger</option>
+					<option>Baby Button Eyes</option>
+					<option>M.C Birthday</option>
+					<option>Jay Sherman</option>
+					<option>Baby-Proofing Saleswoman</option>
+					<option>Babysitter</option>
+					<option>Bait Shop Owner</option>
+					<option>Gloria S.</option>
+					<option>Springfield Billy</option>
+					<option>Tiffany Spuckler</option>
+					<option>Jimmy Carter</option>
+					<option>Emile (executive)</option>
+					<option>J.P.</option>
+					<option>Mindy (executive)</option>
+					<option>Sandy</option>
+					<option>The Southern Colonel</option>
+					<option>Becky (It's a Mad, Mad, Mad, Mad Marge)</option>
+					<option>Dr. Foster</option>
+					<option>Alec Baldwin (character)</option>
+					<option>Ron Howard (character)</option>
+					<option>Baron von Wortzenberger</option>
+					<option>Grandma Van Houten</option>
+					<option>Grandpa Van Houten</option>
+					<option>Grandpa Van Houten's Second Wife</option>
+					<option>Milton Haas</option>
+					<option>Lewis' grandfather</option>
+					<option>Judge Muntz</option>
+					<option>Sherri and Terri's Grandmother</option>
+					<option>Iggy Wiggum</option>
+					<option>Battery</option>
+					<option>The Human Fly</option>
+					<option>Mayor Quimby's Body Guards</option>
+					<option>Crystal</option>
+					<option>El Barto</option>
+					<option>Former-Mayor</option>
+					<option>Simpsons WikiManual of Style</option>
+					<option>Uranium 235 Rods</option>
+					<option>Mr. Dandy</option>
+					<option>Benjamin Franklin</option>
+					<option>Corporal Punishment</option>
+					<option>Homer the Thief</option>
+					<option>Hermano Gamelo Hibbert</option>
+					<option>Cookie Salesgirl</option>
+					<option>Duff Beer Advertiser</option>
+					<option>Master Sushi Chef</option>
+					<option>Beatrice Simmons</option>
+					<option>Johnny (soldier)</option>
+					<option>William MacDougal II</option>
+					<option>Rex (I Love Lisa)</option>
+					<option>Superdude</option>
+					<option>Gulliver Dark</option>
+					<option>Ann Landers</option>
+					<option>Handsome Pete</option>
+					<option>Hortense Simpson</option>
+					<option>Apu's Mother</option>
+					<option>Billy (actor)</option>
+					<option>Brothers and Sisters of Wesley Wiggum</option>
+					<option>Hurt Leg Simpson Relative</option>
+					<option>Chet Simpson</option>
+					<option>Dr. Simpson</option>
+					<option>'Suing' Simpson Relative</option>
+					<option>Wesley Wiggum</option>
+					<option>Munchie</option>
+					<option>Seth</option>
+					<option>Cyndi Lauper (character)</option>
+					<option>Gyro</option>
+					<option>Henri the Hair Stylist</option>
+					<option>Tommy</option>
+					<option>Q-Bert Spuckler</option>
+					<option>The Warden (The Frying Game)</option>
+					<option>Julius Hibbert's father</option>
+					<option>Orville Simpson</option>
+					<option>Furious D</option>
+					<option>Toadstool Jockey</option>
+					<option>Tree Jockey</option>
+					<option>Mr. Vanderbilt</option>
+					<option>Woman Jockey</option>
+					<option>Poochie</option>
+					<option>Thelonius</option>
+					<option>Joey (mafia)</option>
+					<option>Clarissa Wellington</option>
+					<option>Anna Maria D'Amico</option>
+					<option>The Callibricis' Goons</option>
+					<option>Dragon</option>
+					<option>Malicious Krubb</option>
+					<option>Colin</option>
+					<option>Colby Krause</option>
+					<option>Medicine Woman</option>
+					<option>Lionel Richie (character)</option>
+					<option>Arnold Schwarzenegger</option>
+					<option>Cruise Line Man 1</option>
+					<option>Cruise Line Man 2</option>
+					<option>Mr. Johnson</option>
+					<option>Telephone Operator</option>
+					<option>Crystal Meth Spuckler</option>
+					<option>Dubya Spuckler</option>
+					<option>International Harvester Spuckler</option>
+					<option>Samantha Stankey</option>
+					<option>Female Mail Carrier</option>
+					<option>The Genie</option>
+					<option>Vicki Valentine</option>
+					<option>Geoff Jenkins</option>
+					<option>Disco Stu's girlfriend</option>
+					<option>Kyle LaBianco</option>
+					<option>Taffy</option>
+					<option>Nikki McKenna</option>
+					<option>Benevenstanciano</option>
+					<option>Earhart</option>
+					<option>Fitz</option>
+					<option>Garcia</option>
+					<option>Jericho</option>
+					<option>Keneally</option>
+					<option>McGriff the Crime Dog</option>
+					<option>Van Zuylen</option>
+					<option>Ward</option>
+					<option>Bernie</option>
+					<option>Construction Worker</option>
+					<option>Dean Bitterman</option>
+					<option>Dog (SNPP)</option>
+					<option>Female Applicant Reader (SU)</option>
+					<option>Female Nuclear Inspector</option>
+					<option>Guidance Counselor</option>
+					<option>Jock</option>
+					<option>M-Z Counselor</option>
+					<option>Male Applicant Reader (SU)</option>
+					<option>Male Nuclear Inspector</option>
+					<option>Nerd (School of Hard Knockers)</option>
+					<option>Nerd (SU)</option>
+					<option>Nuclear Inspector</option>
+					<option>President of the United States (movie)</option>
+					<option>Punchbowl Student</option>
+					<option>Red Headed Employee</option>
+					<option>Site Manager</option>
+					<option>Springfield University Board Member</option>
+					<option>Jeremy (network executive)</option>
+					<option>Madame Mimi</option>
+					<option>Virgil St.Clair</option>
+					<option>Richard Gere (character)</option>
+					<option>Kavi Nahasapeemapetilon</option>
+					<option>Tony Bennett (character)</option>
+					<option>Amid bin Laden</option>
+					<option>Mina bin Laden</option>
+					<option>Dottie</option>
+					<option>Alvarine Bisque</option>
+					<option>Marge's friend</option>
+					<option>Head of Springfield Box Factory</option>
+					<option>Haiti Veteran</option>
+					<option>Esquilax</option>
+					<option>The Fortune Teller</option>
+					<option>Hugh Parkfield</option>
+					<option>Howell Huser</option>
+					<option>Jub-Jub</option>
+					<option>Bob's Aide</option>
+					<option>The District Attorney</option>
+					<option>Woman Interviewer</option>
+					<option>Capital City Plaza Hotel Employee</option>
+					<option>Mindy Simmons</option>
+					<option>Dr. Demento (character)</option>
+					<option>Humphrey Boa-Gart</option>
+					<option>Mr. Bananas</option>
+					<option>Mrs. Bananas</option>
+					<option>Edgar Neubauer</option>
+					<option>Prudence Goodwyfe</option>
+					<option>The Big Bopper (Grave)</option>
+					<option>Cecil Terwilliger</option>
+					<option>ClownFace</option>
+					<option>Kiki Highsmith</option>
+					<option>Chinese Masseuse</option>
+					<option>Frank Grimes, Jr.</option>
+					<option>Bob Dole</option>
+					<option>Manjula Nahasapeemapetilon</option>
+					<option>Johnny Tightlips</option>
+					<option>Horace Wilcox</option>
+					<option>Francesca Terwilliger</option>
+					<option>Titi</option>
+					<option>Titi's sister</option>
+					<option>Robert Terwilliger Sr.</option>
+					<option>Dame Judith Underdunk</option>
+					<option>Scrat</option>
+					<option>Irish Boy Most Resembling a Potato</option>
+					<option>Inga (Coming to Homerica)</option>
+					<option>Ogdenville Boy</option>
+					<option>Sven</option>
+					<option>Thor Bjorn</option>
+					<option>The Mad Hatter</option>
+					<option>Bonnie Flanders</option>
+					<option>Connie Flanders</option>
+					<option>Chucky</option>
+					<option>Rita LaFleur</option>
+					<option>Meathook</option>
+					<option>Ramrod</option>
+					<option>Cthulu</option>
+					<option>Bobby Mindix</option>
+					<option>Bobo</option>
+					<option>Daphne Burns</option>
+					<option>George Burns (character)</option>
+					<option>Bobo (Dog)</option>
+					<option>Joshua and Amber's Mom</option>
+					<option>Knitting Grandma</option>
+					<option>Norman Rockwell-esque Family</option>
+					<option>Reformed Dad</option>
+					<option>Son (There's No Disgrace Like Home)</option>
+					<option>Troubled Son</option>
+					<option>Don Brodka</option>
+					<option>Ludacris (Character)</option>
+					<option>Brittany (Student)</option>
+					<option>Kaitlin</option>
+					<option>Bambi Bouvier</option>
+					<option>Roscoe</option>
+					<option>Estelle</option>
+					<option>Dr. Brentano</option>
+					<option>Amber Simpson</option>
+					<option>Gladys Gurney</option>
+					<option>Al Gumble</option>
+					<option>Luann's Sister</option>
+					<option>Mr. Mussolini</option>
+					<option>Franklin Burns</option>
+					<option>Dink</option>
+					<option>Randy (tour guide)</option>
+					<option>Nelson's sister</option>
+					<option>Chinese Spy</option>
+					<option>Wang Po</option>
+					<option>White Dragon</option>
+					<option>Madam Wu</option>
+					<option>Fausto</option>
+					<option>Plastic Surgeon</option>
+					<option>Simpsons WikiProject Characters</option>
+					<option>Fido</option>
+					<option>Head of Santa School</option>
+					<option>Mervin Monroe</option>
+					<option>Sir Galahad</option>
+					<option>Mall Cop</option>
+					<option>Dr. H. Boyle</option>
+					<option>Dimoxinil Actor</option>
+					<option>Dimoxinil user</option>
+					<option>Executive 2</option>
+					<option>Karl</option>
+					<option>Al Simmons</option>
+					<option>Hannibal Lecter</option>
+					<option>Titania</option>
+					<option>Gretchen</option>
+					<option>Homer Jr.</option>
+					<option>Corduroy</option>
+					<option>Emily</option>
+					<option>Terrence</option>
+					<option>Mr. Estes</option>
+					<option>Devon Bradley</option>
+					<option>Diablo</option>
+					<option>Norman Van Horne</option>
+					<option>Questo</option>
+					<option>Brenda Weingarten</option>
+					<option>Handsome bachelor</option>
+					<option>Handsome bachelor's brothers</option>
+					<option>Mark (Regarding Margie)</option>
+					<option>Scott Weingarten</option>
+					<option>Tracy</option>
+					<option>Martha (robber)</option>
+					<option>Philip J. Fry</option>
+					<option>Katelyn</option>
+					<option>Luigi (Nintendo)</option>
+					<option>Brown Long Haired Girl</option>
+					<option>Smart Boy</option>
+					<option>Edna Krabappel's Students</option>
+					<option>Cesar</option>
+					<option>Ugolin</option>
+					<option>Chocolate rabbits</option>
+					<option>Godfrey Jones</option>
+					<option>Mr. Doyle</option>
+					<option>Remedial Class Teacher</option>
+					<option>Chloe Spuckler</option>
+					<option>Cody Spuckler</option>
+					<option>Heather Spuckler</option>
+					<option>Rex Banner</option>
+					<option>Fake Lisa Simpson</option>
+					<option>Ginger Flanders</option>
+					<option>Rachel Jordan</option>
+					<option>Flanders' pet woodpecker</option>
+					<option>Burns' Alien</option>
+					<option>Marvin the Martian</option>
+					<option>Leonard Nimoy (character)</option>
+					<option>Burns' Flying Monkeys</option>
+					<option>Fossil Fuels Goon</option>
+					<option>King and Queen Award Presenter</option>
+					<option>C. Ebenezer Burns</option>
+					<option>Eugene Fisk</option>
+					<option>Mike (Homer's Night Out)</option>
+					<option>Suzie</option>
+					<option>Hans (business man)</option>
+					<option>Jimmy Apollo</option>
+					<option>Darryl Strawberry (character)</option>
+					<option>Don Mattingly</option>
+					<option>Roger Clemens (character)</option>
+					<option>Steve Sax</option>
+					<option>Ozzie Smith</option>
+					<option>Spine Melter 2000</option>
+					<option>Tom Jones</option>
+					<option>Sebastian Cobb</option>
+					<option>Ghengis Khan</option>
+					<option>Krusty's son</option>
+					<option>Truckasaurus</option>
+					<option>Ezekiel</option>
+					<option>Ishmael</option>
+					<option>Phillips</option>
+					<option>Forrest Simpson</option>
+					<option>Pet Store Man</option>
+					<option>Albert Dershman</option>
+					<option>Yuma Hickman</option>
+					<option>Senior Dance Instructor</option>
+					<option>Glen</option>
+					<option>Jane (Movementarian)</option>
+					<option>The Leader</option>
+					<option>Oscar the Grouch</option>
+					<option>Larry (driver)</option>
+					<option>Emperor Akihito</option>
+					<option>Edward Christian</option>
+					<option>Robyn Hannah</option>
+					<option>William Milo</option>
+					<option>Johnny Newspaperseed</option>
+					<option>Lifeways Editor</option>
+					<option>Man Underneath Bowling Alley</option>
+					<option>Furious George</option>
+					<option>Mayo Clinic Doctor</option>
+					<option>The PBS Mob</option>
+					<option>Number 12</option>
+					<option>Number 15</option>
+					<option>Number 21</option>
+					<option>Number 27</option>
+					<option>Pete Sampras</option>
+					<option>Mesmerino</option>
+					<option>Waylon Smithers, Sr.</option>
+					<option>Mr. Costington</option>
+					<option>Moe's girlfriend</option>
+					<option>Strom Thurmond</option>
+					<option>Helen of Troy</option>
+					<option>Poseidon</option>
+					<option>Zeus</option>
+					<option>Squiggy</option>
+					<option>Jimmy the Snitch</option>
+					<option>Cleanie</option>
+					<option>Cookie</option>
+					<option>Clara Stetson</option>
+					<option>The Stooped-Over Fiddler</option>
+					<option>Conscience</option>
+					<option>Honesty</option>
+					<option>Jealousy</option>
+					<option>Libido</option>
+					<option>Dick Tufeld</option>
+					<option>Snow White</option>
+					<option>Ray Magini</option>
+					<option>Frosty the Snowman</option>
+					<option>Homer's cousin</option>
+					<option>Homer's cousin's son</option>
+					<option>Homer's cousin's wife</option>
+					<option>Santa's Little Helper's Brother</option>
+					<option>Caleb Thorn</option>
+					<option>Victor</option>
+					<option>Gravedigger Billy</option>
+					<option>Cyrus 15 wives</option>
+					<option>Cyrus's 15 wifes</option>
+					<option>Marie</option>
+					<option>Cyrus Simpson</option>
+					<option>Cheaty</option>
+					<option>Tito</option>
+					<option>Jonathan Franzen</option>
+					<option>Michael Chabon</option>
+					<option>Mr. Burns' older siblings</option>
+					<option>Devan Woosterfield</option>
+					<option>Quenley Woosterfield</option>
+					<option>Devil</option>
+					<option>Mother Superior</option>
+					<option>Gogo Yubari</option>
+					<option>Kim Jong-il (character)</option>
+					<option>Kobe Bryant</option>
+					<option>Larry (SNPP)</option>
+					<option>The Penguin</option>
+					<option>Caitlin (Waverly Hills 9-0-2-1-D'oh)</option>
+					<option>Kate Lynnï»¿</option>
+					<option>Katelyn (Waverly Hills 9-0-2-1-D'oh)</option>
+					<option>Milhouse's cousin</option>
+					<option>Ralph (Waverly Hills)</option>
+					<option>Waverly Hills Elementary School groundskeeper</option>
+					<option>Waverly Hills Elementary School teacher</option>
+					<option>Calvin</option>
+					<option>Ian (Bart the Genius)</option>
+					<option>Ticket Bouncer</option>
+					<option>Captain Sensible</option>
+					<option>Susan B. Anthony Man</option>
+					<option>Les Rock Stars</option>
+					<option>Grim Reaper</option>
+					<option>Maurice</option>
+					<option>SWAT Leader</option>
+					<option>Stan (Car Salesman)</option>
+					<option>Milhouse (Earthland Realms)</option>
+					<option>Sophie</option>
+					<option>Charles Montgomery Burns' robots</option>
+					<option>Goose Gladwell</option>
+					<option>Baron Von Kiss-A-Lot</option>
+					<option>Franklin Jefferson Burns</option>
+					<option>Wally Kogen</option>
+					<option>Keggy</option>
+					<option>Milhouse's Date</option>
+					<option>Chuck's Father</option>
+					<option>Clown Doctor</option>
+					<option>Rachel Cohen</option>
+					<option>Diane (network executive)</option>
+					<option>Grant Connor</option>
+					<option>Three-Eyed Lobster</option>
+					<option>Jon Hamm</option>
+					<option>Milhouse (Shelbyville)</option>
+					<option>Shelby</option>
+					<option>Shelby's Father</option>
+					<option>Shelbyville Abe</option>
+					<option>Shelbyville boy</option>
+					<option>Shelbyville lemonade boy</option>
+					<option>Shelbyville lemonade boy's brother</option>
+					<option>Shelbyville Martin</option>
+					<option>Shelbyville Nelson</option>
+					<option>Vance Connor</option>
+					<option>Mayan gods</option>
+					<option>Mayans</option>
+					<option>Draco Malfoy</option>
+					<option>Princess Palomita of Prussia</option>
+					<option>Eartha Kitt (character)</option>
+					<option>Holly Hippie</option>
+					<option>Gym Teacher</option>
+					<option>Mighty Pigs</option>
+					<option>Volleyball Coach</option>
+					<option>Editor of Everyman</option>
+					<option>Everyman</option>
+					<option>Avery Mann</option>
+					<option>Lyle McCarthy</option>
+					<option>Prius Albertson</option>
+					<option>Elder Moleman</option>
+					<option>Jasper's son</option>
+					<option>Old Jewish man's son</option>
+					<option>English Scientist</option>
+					<option>Otis</option>
+					<option>Professor Lombardo</option>
+					<option>Dr. Zitsofsky</option>
+					<option>Hank Hill</option>
+					<option>The Nahasapeemapetilon Octuplets</option>
+					<option>Odd Koala</option>
+					<option>Homer's Lhasa Apso</option>
+					<option>Frankie (Health Inspector)</option>
+					<option>Itchy & Scratchy robots</option>
+					<option>John Travolta</option>
+					<option>Reverend Flanders</option>
+					<option>Denis Leary (character)</option>
+					<option>Bill Gates</option>
+					<option>Howard (florist)</option>
+					<option>Yendor</option>
+					<option>Professor Huntington</option>
+					<option>Luke Skywalker (parody)</option>
+					<option>Princess Agoomba</option>
+					<option>Yoda (parody)</option>
+					<option>Sherri and Terri's cousin</option>
+					<option>Sarah (Bart's Girlfriend)</option>
+					<option>Joan Bushwell</option>
+					<option>Kitenge</option>
+					<option>Muntu</option>
+					<option>Professor Skizzletwitch</option>
+					<option>Wile E. Coyote</option>
+					<option>Zack (Springfield Retirement Castle)</option>
+					<option>Kaiser Wilhelm II</option>
+					<option>Sundance Kid</option>
+					<option>Lou (cow)</option>
+					<option>The Great Raymondo</option>
+				</select>
 		</div>
 		<div class= "season">
 			Choose a season:
@@ -56,7 +990,7 @@
 		<div class="selection">
 			
 		</div>
-		<script src="test.js"></script>
+		<!-- <script src="test.js"></script> -->
 		<script src="visual.js"></script>
 	</body>
 </html>

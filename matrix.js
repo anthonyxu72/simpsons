@@ -9,17 +9,13 @@ function searchCharacters(chars) {
 			nodesArray.push({"node":i, "name":chars[i]});	
 			for (var j=0; j<chars.length; j++) {
 				if (i<j) {
-					if (typeof(data[chars[i]][chars[j]]) != "undefined") {
+					if (typeof(data[chars[i]][chars[j]]) !== "undefined") {
 						linksArray.push({"source":i, "target":j, "value":data[chars[i]][chars[j]]});
 					}
 				}
 			}
-			
 		}
-
-				
+	
 	});
-	characterMatrixArray['nodes'] = nodesArray;
-	characterMatrixArray['links'] = linksArray;
 	return characterMatrixArray;
 }
