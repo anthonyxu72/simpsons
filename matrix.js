@@ -17,12 +17,10 @@ function searchCharacters(chars) {
 		}
 		characterMatrixArray['nodes'] = nodesArray;
 		characterMatrixArray['links'] = linksArray;
-		return characterMatrixArray;
+		returnArray(characterMatrixArray);
 	});
-	//console.log(characterMatrixArray);
 }
 
 function returnArray(array){
-	console.log(array)
 	return array;
 }
