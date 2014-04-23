@@ -957,7 +957,7 @@
 		<div class= "season">
 			Choose a season:
 			<select data-placeholder="Choose a season..." style="width:150px;" class="chosen-season">  
-						<option value=""></option>
+					<option value=""></option>
 		            <option>Season 1</option>
 		            <option>Season 2</option>
 		            <option>Season 3</option>
@@ -968,8 +968,8 @@
 		            <option>Season 8</option>
 		            <option>Season 9</option>
 		            <option>Season 10</option>
-		            <option>Season 11</option>
-		            <option>Season 12</option>
+		        	<option>Season 11</option>
+		        	<option>Season 12</option>
 		            <option>Season 13</option>
 		            <option>Season 14</option>
 		            <option>Season 15</option>
@@ -982,11 +982,1504 @@
 		            <option>Season 22</option>
 		            <option>Season 23</option>
 		            <option>Season 24</option>
-						<option>Season 25</option>
+					<option>Season 25</option>
 			</select>
 		</div>
 		<div class="locations">
-			<select data-placeholder="Choose a location..." style="width:250px;" multiple class="chosen-select"></select>
+			<script type="text/javascript">
+				$(function(){
+    				$(".chosen-loc").chosen({ max_selected_options: 1 });
+					$(".chosen-loc").chosen().change(function(e, params){
+ 						var selectedLoc = $(".chosen-loc").chosen().val();
+ 						console.log(selectedLoc);
+					});
+				});	
+			</script>
+			<select data-placeholder="Choose a location..." style="width:250px;" multiple class="chosen-loc">
+					<option value=""></option>
+					<option>Barney's Bowlarama</option>
+					<option>Channel 6</option>
+					<option>Baby Seal Beach</option>
+					<option>Bloodbath Gulch</option>
+					<option>Catfish Lake</option>
+					<option>123 Fake Street</option>
+					<option>The Gilded Truffle</option>
+					<option>Duff Brewery</option>
+					<option>Capital City</option>
+					<option>Globex Corporation</option>
+					<option>Burns Manor</option>
+					<option>Evergreen Terrace</option>
+					<option>Camp Land-A-Man</option>
+					<option>742 Evergreen Terrace</option>
+					<option>Frigid Falls</option>
+					<option>Cape Fear</option>
+					<option>Cypress Creek</option>
+					<option>The China Syndrome</option>
+					<option>Calmwood Mental Hospital</option>
+					<option>First Church of Springfield</option>
+					<option>Barnacle Bay</option>
+					<option>Brockway</option>
+					<option>Ayn Rand School for Tots</option>
+					<option>Duff Gardens</option>
+					<option>Classy Joe's</option>
+					<option>Gulp 'n' Blow</option>
+					<option>Capital City Airport</option>
+					<option>Garbage Island</option>
+					<option>744 Evergreen Terrace</option>
+					<option>Dr. Zitsofsky's Dermatology Clinic</option>
+					<option>Circus of Values</option>
+					<option>Dr. Monroe's Family Therapy Center</option>
+					<option>Bob's RV Round-Up</option>
+					<option>Ethnictown</option>
+					<option>Crackton</option>
+					<option>Aztec Theater</option>
+					<option>Girdles N' Such</option>
+					<option>The Ear Piercery</option>
+					<option>Costumes</option>
+					<option>Fiesta Terraces</option>
+					<option>Chateau Maison</option>
+					<option>Chez Paree</option>
+					<option>Hair Clinic</option>
+					<option>Capital City Suspension Bridge</option>
+					<option>Capital City Duff Brewery</option>
+					<option>Bootleg T-Shirt Emporium</option>
+					<option>Cha Cha</option>
+					<option>Capital City Stadium</option>
+					<option>740 Evergreen Terrace</option>
+					<option>Coolsville Comics & Toys</option>
+					<option>Bloodbath & Beyond Gun Shop</option>
+					<option>Dr. Nick Riviera's Blood Bank</option>
+					<option>Channel 6 News</option>
+					<option>Chinatown</option>
+					<option>Greektown</option>
+					<option>Gay Neighborhood</option>
+					<option>Guidopolis</option>
+					<option>Duff Stadium</option>
+					<option>Echo Canyon (location)</option>
+					<option>Cranford</option>
+					<option>Department of Motor Vehicles</option>
+					<option>Dingo Junction</option>
+					<option>Ah, Fudge! Factory</option>
+					<option>FaceStuffers</option>
+					<option>Berger's Burgers</option>
+					<option>Au Naturel</option>
+					<option>Ajax Steel Mill</option>
+					<option>Grocery Store</option>
+					<option>Eatie Gourmet's</option>
+					<option>Eye Caramba</option>
+					<option>MediaWiki:Createplate-Location</option>
+					<option>Duff Beer Krusty Burger Buzz Cola Costington's Department Store Kwik-E-Mart Stupid Flanders Park</option>
+					<option>The Boob Tubery</option>
+					<option>Billionaire Camp</option>
+					<option>The Frying Dutchman</option>
+					<option>Funeral Parlor</option>
+					<option>Evergreen Terrace (Simpsons Road Rage)</option>
+					<option>Entertainment District (Simpsons Road Rage)</option>
+					<option>Enriched Learning Center for Gifted Children</option>
+					<option>Goose's Gags and Gifts</option>
+					<option>Evil House</option>
+					<option>Bait Shop</option>
+					<option>Chupo's Candy Store</option>
+					<option>Hailstone's</option>
+					<option>The Aristocrat</option>
+					<option>Downtown Springfield</option>
+					<option>Aphrodite Inn</option>
+					<option>Diz-Nee Land</option>
+					<option>Catfish Lake Bait Store</option>
+					<option>Gas'N'Gulp</option>
+					<option>All Trees $75</option>
+					<option>Christmas Tree Farm</option>
+					<option>12th Avenue</option>
+					<option>D Street</option>
+					<option>First Bank of Springfield</option>
+					<option>Aced Shoe</option>
+					<option>Creepy Family's House</option>
+					<option>Freaky Family House</option>
+					<option>Bart's Imaginary Hell</option>
+					<option>Elm Street</option>
+					<option>Get Your Photo Taken with Bigfoot!</option>
+					<option>Half-Man Half-Ape Burgers</option>
+					<option>Candy Most Dandy</option>
+					<option>Grassy Hilled Area</option>
+					<option>Books</option>
+					<option>Carmel Corn Warehouse</option>
+					<option>Coffee Shop (Bowlarama)</option>
+					<option>Florence of Arabia</option>
+					<option>Girlesque</option>
+					<option>Foxy Boxing</option>
+					<option>Al's Work</option>
+					<option>Barney's apartment</option>
+					<option>Airport le Paris</option>
+					<option>Albanian Airport</option>
+					<option>Bon Dormin</option>
+					<option>CafÃ©</option>
+					<option>Communist Base</option>
+					<option>Communist Satellite</option>
+					<option>Eiffel Tower</option>
+					<option>America's Most Armed and Dangerous Office</option>
+					<option>Bike Track</option>
+					<option>Charlotte</option>
+					<option>Bikini Shop</option>
+					<option>Dimoxinil Beach</option>
+					<option>Halloween Stage</option>
+					<option>Capital City State Headquarters</option>
+					<option>82 Evergreen Terrace</option>
+					<option>East Springfield</option>
+					<option>Evergreen Terrace Cliff</option>
+					<option>All Night Gym</option>
+					<option>Burger King</option>
+					<option>Costington's</option>
+					<option>General Chang's Taco Italiano</option>
+					<option>Dead Lobster</option>
+					<option>Downtown (Simpsons Road Rage)</option>
+					<option>Fortune Megastore</option>
+					<option>Da Buzz Club</option>
+					<option>Fast-Food Boulevard</option>
+					<option>Capitol Building</option>
+					<option>Garden of Eden</option>
+					<option>Bagel Boy</option>
+					<option>Gypsy's Shop</option>
+					<option>Cora's Diner</option>
+					<option>Camp Deadly</option>
+					<option>England</option>
+					<option>Brazil</option>
+					<option>Australia</option>
+					<option>China</option>
+					<option>France</option>
+					<option>G. Bannister & Associates</option>
+					<option>Coffee & Tea</option>
+					<option>Discount Fashion</option>
+					<option>Canada</option>
+					<option>Beachcomber Barber Shop</option>
+					<option>Gull Things Considered</option>
+					<option>3rd Street</option>
+					<option>3rd Street Station</option>
+					<option>156th Street</option>
+					<option>181st Street</option>
+					<option>257th Street</option>
+					<option>Groovy Grove Juice Corporation</option>
+					<option>Elm Street Video Arcade</option>
+					<option>Euro-Itchy & Scratchy Land</option>
+					<option>Circuit Circus</option>
+					<option>Bail Bonds</option>
+					<option>Bookaccino's</option>
+					<option>Boris' Car Loft</option>
+					<option>Cuba</option>
+					<option>Alaska</option>
+					<option>Edna's Edibles</option>
+					<option>'Muff Said</option>
+					<option>H.R. Muffin Stuff</option>
+					<option>Donny's Discount Gas</option>
+					<option>All Creatures Great and Cheap</option>
+					<option>Blockoland</option>
+					<option>The Creator's Mansion</option>
+					<option>Equalia</option>
+					<option>Alley</option>
+					<option>Cameras</option>
+					<option>The Auto Graveyard</option>
+					<option>Groovy Grove Natural Farm</option>
+					<option>Flancrest Enterprises</option>
+					<option>Camp See-A-Tree</option>
+					<option>732 Evergreen Terrace</option>
+					<option>Hairy Shearers</option>
+					<option>Five Corners</option>
+					<option>Apu's apartment</option>
+					<option>Dr. Julius Hibbert, M.D. Family Practice</option>
+					<option>19 Fish Smell Drive</option>
+					<option>Greaser's Cafe</option>
+					<option>Builders' Barn</option>
+					<option>Crazy Vaclav's Place of Automobiles</option>
+					<option>Caesar's Pow-Wow Casino</option>
+					<option>Dunkilderry</option>
+					<option>Cisc O'systems</option>
+					<option>Giant's Causeway</option>
+					<option>Guinness Brewery</option>
+					<option>Blarney Castle</option>
+					<option>Germany</option>
+					<option>Albania</option>
+					<option>Alkali Flats</option>
+					<option>The Forbidden Barn</option>
+					<option>Fort Springfield</option>
+					<option>Fort Fragg</option>
+					<option>CostMo</option>
+					<option>Goody New Shoes</option>
+					<option>316 Pikeland Ave.</option>
+					<option>CafÃ© Kafka</option>
+					<option>Abandoned aqueduct</option>
+					<option>35 Industry Way</option>
+					<option>1 Ocean View Drive</option>
+					<option>Family Fun Center</option>
+					<option>The Copy Jalopy</option>
+					<option>BetterThanTV.com</option>
+					<option>Crazy E.T.'s Phone Home</option>
+					<option>Captain Blip's Zapateria</option>
+					<option>Fancy Farms</option>
+					<option>652 8th Avenue</option>
+					<option>Dregs</option>
+					<option>The Hague</option>
+					<option>Hague airport</option>
+					<option>Expressions</option>
+					<option>Asia de Cuba</option>
+					<option>Bachelor Arms</option>
+					<option>Bureau of Licenses and Permits</option>
+					<option>Donner's Party Supplies</option>
+					<option>Cockamamie's</option>
+					<option>13 Euclid Street</option>
+					<option>Fort Clinton</option>
+					<option>Cypress Creek Elementary School</option>
+					<option>Escalator to Nowhere</option>
+					<option>50 Foot Magnifying Glass</option>
+					<option>Finland</option>
+					<option>Crocodile Dunkee</option>
+					<option>Cloisters Academy</option>
+					<option>Flickeys</option>
+					<option>Family Therapy Centre</option>
+					<option>748 Evergreen Terrace</option>
+					<option>Fat Tony's house</option>
+					<option>Discount Frames</option>
+					<option>Florida</option>
+					<option>Branson</option>
+					<option>Argentina</option>
+					<option>Buenos Aires</option>
+					<option>First A.M.E. Church of Springfield</option>
+					<option>57 Walnut Street</option>
+					<option>Burns' Surveillance Room</option>
+					<option>Gum for Less</option>
+					<option>Conformco</option>
+					<option>Arabic Palace</option>
+					<option>Executive Washroom</option>
+					<option>Capital City Plaza Hotel</option>
+					<option>Hall D</option>
+					<option>French Polynesia</option>
+					<option>Butabitari</option>
+					<option>Bolivia</option>
+					<option>Chile</option>
+					<option>Antarctica</option>
+					<option>Afghanistan</option>
+					<option>Algeria</option>
+					<option>Andorra</option>
+					<option>Angola</option>
+					<option>Armenia</option>
+					<option>Aruba</option>
+					<option>Austria</option>
+					<option>Azerbaijan</option>
+					<option>The Bahamas</option>
+					<option>Belarus</option>
+					<option>Belgium</option>
+					<option>Belize</option>
+					<option>Bermuda</option>
+					<option>Bosnia-Herzegovina</option>
+					<option>Botswana</option>
+					<option>Brunei</option>
+					<option>Bulgaria</option>
+					<option>Burkina Faso</option>
+					<option>Burma</option>
+					<option>Cambodia</option>
+					<option>Cameroon</option>
+					<option>Canary Islands</option>
+					<option>District 9</option>
+					<option>District 10</option>
+					<option>Colombia</option>
+					<option>Costa Rica</option>
+					<option>Congo</option>
+					<option>Croatia</option>
+					<option>Czechoslovakia</option>
+					<option>Denmark</option>
+					<option>Ecuador</option>
+					<option>Egypt</option>
+					<option>El Salvador</option>
+					<option>Estonia</option>
+					<option>Bangladesh</option>
+					<option>Ethiopia</option>
+					<option>Ivory Coast</option>
+					<option>Ghana</option>
+					<option>Greece</option>
+					<option>Guadeloupe</option>
+					<option>Guatemala</option>
+					<option>Haiti</option>
+					<option>Computer Hospital</option>
+					<option>Future Site of Children's Hospital</option>
+					<option>First Church of Lard Lad</option>
+					<option>Google (building)</option>
+					<option>El Chemistri</option>
+					<option>Haile Delicious Ethiopian Food</option>
+					<option>East Oak Street</option>
+					<option>Classy Girls Strip Club</option>
+					<option>1501 East Oak Street</option>
+					<option>Apu's Taj Mahal</option>
+					<option>Domicles For The Destitute</option>
+					<option>Adult Education Annex</option>
+					<option>Broken-Home Chimney Repair</option>
+					<option>Airport Refueling Way (bus stop)</option>
+					<option>Animal Psychotherapy Center</option>
+					<option>99Â¢ Shrink</option>
+					<option>Cinderblock Village</option>
+					<option>Hal's Liquor</option>
+					<option>Coffee Shop (The Blue and The Gray)</option>
+					<option>Are We Hair Yet?</option>
+					<option>Another Government Highway Project That Will Never End</option>
+					<option>Consulate of China</option>
+					<option>Chili Blasters</option>
+					<option>Dimwillie's</option>
+					<option>Food Court</option>
+					<option>Greek Town</option>
+					<option>Crouching Tiger Hidden Eggroll</option>
+					<option>Coffee Shop (mall)</option>
+					<option>Abandoned Store</option>
+					<option>1987 Calendars!!!</option>
+					<option>Cossacks Fifth Avenue</option>
+					<option>Calgary</option>
+					<option>Car Wash</option>
+					<option>Expensive Bros. Jewelry</option>
+					<option>Forgotten Amos Cookies</option>
+					<option>Blocko Store</option>
+					<option>Condos at Towne Centre at Springfield Glenne</option>
+					<option>Drippin' Dots</option>
+					<option>Cinnabun</option>
+					<option>CrÃ¨me de la Creams</option>
+					<option>Cold Navy</option>
+					<option>Banana Dictatorship</option>
+					<option>American Princess</option>
+					<option>Hamburger Heaven</option>
+					<option>Abercrombie & The Other Guy</option>
+					<option>Book Cellar</option>
+					<option>Bikini Atol</option>
+					<option>Cookie Mart</option>
+					<option>Child Psychiatrist</option>
+					<option>Dukakis Campaign H.Q.</option>
+					<option>Electronics, Etc.</option>
+					<option>Falkland Islands</option>
+					<option>15201 Maple Systems Road</option>
+					<option>Bar</option>
+					<option>Camp Flab-Away</option>
+					<option>E4 Convention</option>
+					<option>734 Evergreen Terrace</option>
+					<option>Bartovia</option>
+					<option>Gee Your Hair Smells Terrific Arena</option>
+					<option>Bates Motel</option>
+					<option>Big T Burgers & Fries</option>
+					<option>Big T Theatre</option>
+					<option>The A-Maize-Ing Maize Maze</option>
+					<option>Canada-USA Border</option>
+					<option>Dudley Do-Drugs</option>
+					<option>Burns & Noble</option>
+					<option>Cropduster Video</option>
+					<option>GAO Schwarz</option>
+					<option>Aspen</option>
+					<option>Abercrombie & Rich</option>
+					<option>Blockbuster Video</option>
+					<option>Bloaters at the Squidport</option>
+					<option>Bismark</option>
+					<option>Birthplace of Matt Groening</option>
+					<option>Birthplace of Jesus (Disputed)</option>
+					<option>Bill & Edwina's Tour-Rest Cabins</option>
+					<option>Cookie Colossus</option>
+					<option>Cosmic Wars Ranch</option>
+					<option>Call Me Delish-Mael Taffy Shop</option>
+					<option>Civil War Prison and Museum of Sideburns</option>
+					<option>Cypress Creek Promenade</option>
+					<option>Hammock Complex</option>
+					<option>Chichen Itza</option>
+					<option>Great Wall of China</option>
+					<option>Big Ben</option>
+					<option>Fireworks, Candy, and Puppy Dogs Store</option>
+					<option>Bart Flying at School</option>
+					<option>Bush House</option>
+					<option>City Morgue</option>
+					<option>754 Evergreen Terrace</option>
+					<option>Gold House</option>
+					<option>Crystal Cathedral</option>
+					<option>Czech Republic</option>
+					<option>Gavelby's Auction House</option>
+					<option>Freak-E-Mart</option>
+					<option>Groovetone Records</option>
+					<option>B. Hoffman Dentist</option>
+					<option>Bart's Tree House</option>
+					<option>Capitol City Apartments</option>
+					<option>Evergreen Terrace (Simpsons Road Rage)/References</option>
+					<option>Evergreen Terrace (Simpsons Road Rage)/Quotes</option>
+					<option>Entertainment District (Simpsons Road Rage)/References</option>
+					<option>Downtown (Simpsons Road Rage)/Quotes</option>
+					<option>Cheddarbarrel Farm and 4-H Center</option>
+					<option>Abbattoir & Costello LLC.</option>
+					<option>Entertainment District (Simpsons Road Rage)/Quotes</option>
+					<option>German Castle</option>
+					<option>Downtown (Simpsons Road Rage)/References</option>
+					<option>Atlanta, Georgia</option>
+					<option>Georgia</option>
+					<option>Downtown (Simpsons Road Rage)/Gags</option>
+					<option>Entertainment District (Simpsons Road Rage)/Gags</option>
+					<option>California</option>
+					<option>Evergreen Terrace (Simpsons Road Rage)/Appearances</option>
+					<option>Colonel Burns' Manor</option>
+					<option>Evergreen Terrace (Simpsons Road Rage)/Gags</option>
+					<option>Casino</option>
+					<option>Arby's</option>
+					<option>Counter Truancy Unit</option>
+					<option>Diz-Nee Historical Park</option>
+					<option>Grand</option>
+					<option>Dexter family's house</option>
+					<option>The Drunk Paralegal Karaoke Supplier</option>
+					<option>Greek Orthodox Church</option>
+					<option>Carl's Dad Caverns</option>
+					<option>Geezer Rock</option>
+					<option>Fort Sensible</option>
+					<option>Golf 'N' Die Retirement Village</option>
+					<option>Campbell's Chunky Soup Maximum Security Prison</option>
+					<option>Chateau d'If Prison</option>
+					<option>Cafe de Mexico</option>
+					<option>Clam-Elot Sea-Food</option>
+					<option>Blowhole Republic</option>
+					<option>Abercrombie & Fish</option>
+					<option>Chazz Busby Ballet Academy</option>
+					<option>FÃªte Accompli</option>
+					<option>Bail Bonds and Beyond</option>
+					<option>General Store</option>
+					<option>Flanders family's bomb shelter</option>
+					<option>Broken Dreams Storage Lockers</option>
+					<option>Enron's Ride of Broken Dreams</option>
+					<option>Box Fort</option>
+					<option>Abe's and Selma's House</option>
+					<option>Books! Books! and Additional Books!</option>
+					<option>Buckingham Palace Quick Lube</option>
+					<option>Four Seasons</option>
+					<option>Capital City Convention Center</option>
+					<option>Alberto's House</option>
+					<option>Catholic Heaven</option>
+					<option>Bin Laden family's house</option>
+					<option>Diner</option>
+					<option>Area 51-A</option>
+					<option>Area 51</option>
+					<option>Army Proving Grounds (bus stop)</option>
+					<option>End of the Line</option>
+					<option>Barnacle Bay Theater</option>
+					<option>Candy Shoppe</option>
+					<option>Barnacle Bay Oceanographic Institute</option>
+					<option>Amish Country</option>
+					<option>Crypto Barn</option>
+					<option>Dr. Nick's Walk-In Clinic</option>
+					<option>Dentz</option>
+					<option>Beachwear</option>
+					<option>Antiques</option>
+					<option>Clay Jars</option>
+					<option>Gifts</option>
+					<option>Coffee Shop (New Kids on the Blecch)</option>
+					<option>Classified Records</option>
+					<option>Djibouti</option>
+					<option>Freestone Family Peach Orchard</option>
+					<option>Burger Plate</option>
+					<option>Fish 'n' Chips</option>
+					<option>Cap'n Jack's Bait and Tackle</option>
+					<option>Burgers n' Fries</option>
+					<option>Gotham City Opera House</option>
+					<option>Crafty Art's Arts and Crafts</option>
+					<option>Fresh Squeezed Lemonade</option>
+					<option>Fried Dough</option>
+					<option>Day-Care Center</option>
+					<option>Grease Recycling Plant</option>
+					<option>Downer's Party Supplies</option>
+					<option>Astroid Elementary</option>
+					<option>Alternative Knifestyles</option>
+					<option>Armstead's Mopeds</option>
+					<option>Fab Abs</option>
+					<option>Farmer Billy's Bacon Factory</option>
+					<option>Deluxe Sunday Brunch</option>
+					<option>Animal Assistants</option>
+					<option>Fortress of Choclitude</option>
+					<option>743 Evergreen Terrace</option>
+					<option>FBI Call Center</option>
+					<option>Atomic-Con</option>
+					<option>Boise Astoria</option>
+					<option>Alley McBalls</option>
+					<option>Garlicville</option>
+					<option>Chuck Dukewagon's All American Chow Lounge</option>
+					<option>Guinea Pig Rescue Center</option>
+					<option>Cayman Islands</option>
+					<option>Cretaceous Park</option>
+					<option>Buzz Cola Dome</option>
+					<option>Moe's Tavern</option>
+					<option>Shelbyville</option>
+					<option>Screamville</option>
+					<option>Kwik-E-Mart</option>
+					<option>North Haverbrook</option>
+					<option>Rigel 7</option>
+					<option>Leftorium</option>
+					<option>Krusty Burger</option>
+					<option>New Springfield</option>
+					<option>Kentucky Fried Chicken</option>
+					<option>The Itchy & Scratchy Store</option>
+					<option>New Horrorfield</option>
+					<option>Pressboard Estates (neighborhood)</option>
+					<option>The Land of Chocolate</option>
+					<option>Rural Route 9</option>
+					<option>Shapes</option>
+					<option>Lard Lad Donuts</option>
+					<option>Mount Seldom</option>
+					<option>David Mirkin</option>
+					<option>Krustylu Studios</option>
+					<option>Lake Flaccid</option>
+					<option>Little Pwagmattasquarmsettport</option>
+					<option>Ogdenville</option>
+					<option>Legitimate Businessman's Social Club</option>
+					<option>Little Italy</option>
+					<option>Shelbyville Orphanage</option>
+					<option>Humbleton</option>
+					<option>L.A. Body Works</option>
+					<option>Ironic Punishment Division</option>
+					<option>Pitiless Pup Attack Dog School</option>
+					<option>Mr. Burns' Casino</option>
+					<option>Olde Springfield Towne</option>
+					<option>Sir Putt-A-Lot's Merrie Olde Fun Centre</option>
+					<option>Lake Springfield</option>
+					<option>Recluse Ranch Estates</option>
+					<option>Mt. Embolism</option>
+					<option>Quimby Compound</option>
+					<option>The Happy Sailor Tattoo Parlor</option>
+					<option>The Popcorn Shack</option>
+					<option>Santa School</option>
+					<option>Pawn Shop</option>
+					<option>Herman's Military Antiques</option>
+					<option>Noise Land Video Arcade</option>
+					<option>The Jazz Hole</option>
+					<option>The Jerky Hut</option>
+					<option>International House of Answering Machines</option>
+					<option>Shorty's</option>
+					<option>Rubber Baby Buggy Bumpers Babysitting Service</option>
+					<option>Ron's Meat</option>
+					<option>Jake's Unisex Hair Palace</option>
+					<option>Royal Majesty</option>
+					<option>The Penny Loafer</option>
+					<option>Original Frenchie's</option>
+					<option>Peanut Street</option>
+					<option>Leavelle's Bodyguard Academy</option>
+					<option>Ma and Pa's</option>
+					<option>Old Jewish Man's House</option>
+					<option>Mrs. Bellamy's House</option>
+					<option>Shelbyville Bluffs</option>
+					<option>Little Newark</option>
+					<option>Rolling Rock</option>
+					<option>Lower East Side</option>
+					<option>Old Fishin' Hole</option>
+					<option>La Maison DerriÃ¨re</option>
+					<option>I Can't Believe It's A Law Firm!</option>
+					<option>Pepi's House</option>
+					<option>KBBL Radio</option>
+					<option>The Singing Sirloin</option>
+					<option>Phineas Q. Butterfat's 5600 Flavors Ice Cream Parlor</option>
+					<option>Places visited by the Simpson family</option>
+					<option>Kamp Krusty (location)</option>
+					<option>Royal Majesty for the Obese or Gangly Gentleman</option>
+					<option>Mt. Swartzwelder Historic Cider Mill</option>
+					<option>Mt. Splashmore</option>
+					<option>Mount Carlmore</option>
+					<option>Luigi's</option>
+					<option>Shelbyville Heights</option>
+					<option>Little Bangkok</option>
+					<option>Shelbyville Elementary School</option>
+					<option>It Blows</option>
+					<option>New Bedlam Rest Home for the Emotionally Interesting</option>
+					<option>Ice Cream Parlor</option>
+					<option>Old, abandoned summer-camp</option>
+					<option>New York City</option>
+					<option>Shotkickers</option>
+					<option>The Hate Box</option>
+					<option>Planet Hype</option>
+					<option>The Hungry Hun</option>
+					<option>P. Piggly Hogswine's Super-Smorg</option>
+					<option>She-She Lounge</option>
+					<option>Russian District</option>
+					<option>Mr. Burns Basketball Stadium</option>
+					<option>Little Lisa Recycling Plant</option>
+					<option>Howard's Flowers</option>
+					<option>L'il Chapel</option>
+					<option>Shotgun Pete's</option>
+					<option>The Happy Sumo</option>
+					<option>King Toot's Music Store</option>
+					<option>Lullabuy$</option>
+					<option>Kentucky Fried Panda</option>
+					<option>Mt. Springfield</option>
+					<option>Mary (shop)</option>
+					<option>Nuclear Lake</option>
+					<option>Highway Nine Bird Sanctuary</option>
+					<option>Imaginary Funeral Parlor</option>
+					<option>Official Bigfoot Souvenirs</option>
+					<option>Research Center</option>
+					<option>Hotel</option>
+					<option>Restricted Grass</option>
+					<option>Mud City</option>
+					<option>Sapphire Lounge</option>
+					<option>Mike's House</option>
+					<option>Preschool</option>
+					<option>The Rusty Barnacle</option>
+					<option>Shoe City</option>
+					<option>La Rotisserie</option>
+					<option>Patiserrie</option>
+					<option>Marge on the Lam/Appearances</option>
+					<option>Homer the Vigilante/Appearances</option>
+					<option>Krusty's Apartment</option>
+					<option>Mapple</option>
+					<option>Honey Pot</option>
+					<option>Next Exit</option>
+					<option>Karl's Apartment</option>
+					<option>Ren's Meat</option>
+					<option>The Raven Chamber</option>
+					<option>Imaginary Tree</option>
+					<option>Maggie's Imaginary Future House</option>
+					<option>Krusty's Clown College</option>
+					<option>Mapple Store</option>
+					<option>Saint Sebastian's School for Wicked Girls</option>
+					<option>Hell</option>
+					<option>Manhattan Square</option>
+					<option>London</option>
+					<option>Nuclear Power Plant (Simpsons Road Rage)</option>
+					<option>Joe's Tavern</option>
+					<option>Red Blazer Realty</option>
+					<option>SHÃ˜P</option>
+					<option>Screaming Monkey Medical Research Center</option>
+					<option>The Murderhorn</option>
+					<option>Itchy & Scratchy Land (Theme Park)</option>
+					<option>House-O-Donuts</option>
+					<option>The Leaf Garret</option>
+					<option>Knockers</option>
+					<option>Kozy Kabins</option>
+					<option>Ronald Reagan Reeducation Center</option>
+					<option>Litters O' Critters Pet Shop</option>
+					<option>Millionaire Camp</option>
+					<option>London Eye</option>
+					<option>India</option>
+					<option>Japan</option>
+					<option>Italy</option>
+					<option>Scotland</option>
+					<option>Loch Ness</option>
+					<option>Morocco</option>
+					<option>River Thames</option>
+					<option>Junkytown Legal Clinic</option>
+					<option>Larry's Cane Store</option>
+					<option>Little Pwagmattasquarmsettport Public Library</option>
+					<option>Heaven</option>
+					<option>Peru</option>
+					<option>Machu Picchu</option>
+					<option>Paris</option>
+					<option>Isotope Stadium</option>
+					<option>R. Crumb's Keep on Muffin'</option>
+					<option>Muff Mart</option>
+					<option>Muffin Store</option>
+					<option>Hong Kong</option>
+					<option>Ireland</option>
+					<option>O'Flanagan's Pub</option>
+					<option>Israel</option>
+					<option>Sit-N-Rotate</option>
+					<option>Praiseland</option>
+					<option>Matlock Expressway</option>
+					<option>Rommelwood Military School</option>
+					<option>Murder Town</option>
+					<option>Homer and Bart's Surveillance Camera Blind Spot</option>
+					<option>The Simpsons: Hit & Run/Appearances</option>
+					<option>Heathrow Airport</option>
+					<option>Jazzy Goodtime's</option>
+					<option>Main Street</option>
+					<option>Municipal House of Pancakes</option>
+					<option>J.R.R. Toykin's</option>
+					<option>Morningwood Penitentiary</option>
+					<option>The Pimento Grove</option>
+					<option>Santa's Village</option>
+					<option>Old Simpson Farm</option>
+					<option>Old Springfield Library</option>
+					<option>Itchy & Scratchy International</option>
+					<option>Krustyland</option>
+					<option>Poppa Wheelie's</option>
+					<option>Mexico</option>
+					<option>Hewlett Fitzpackard</option>
+					<option>Mick-rosoft</option>
+					<option>Paramountie Studios</option>
+					<option>Itchy & Scratchy's</option>
+					<option>Republican Party Headquarters</option>
+					<option>Rancho Relaxo</option>
+					<option>Jebediah Springfield Park</option>
+					<option>Nero's Palace</option>
+					<option>Salsiccia</option>
+					<option>Nick's Bowling Shop</option>
+					<option>Las Vegas</option>
+					<option>Sequel Stop</option>
+					<option>Monstromart</option>
+					<option>Honest John's Computers</option>
+					<option>Heinrich's Monocle Shop</option>
+					<option>Simpsons Wiki:Manual of Style (locations)</option>
+					<option>The Italian Bob/Appearances</option>
+					<option>Russia</option>
+					<option>The Island</option>
+					<option>Plaster Mountain Theme Park</option>
+					<option>Kent Brockman's mansion</option>
+					<option>Palm Springfield Resort</option>
+					<option>Java the Hut</option>
+					<option>Jittery Joe's Coffee Shop</option>
+					<option>Sha-Boom Ka-Boom! Cafe</option>
+					<option>I.P.O. Friday's</option>
+					<option>Overpass Diner</option>
+					<option>Hickton</option>
+					<option>Oslo</option>
+					<option>Norway</option>
+					<option>International Court of Justice</option>
+					<option>Netherlands</option>
+					<option>Izzy's Deli</option>
+					<option>Rock Bottom Remainders</option>
+					<option>Kidstown USA</option>
+					<option>In 'N' Out Ear Piercing</option>
+					<option>Murder House</option>
+					<option>Plunderer Pete's</option>
+					<option>Pay, Park & Pay</option>
+					<option>Li'l Valu-Mart</option>
+					<option>Popsicle Stick Skyscraper</option>
+					<option>Playdough Factory</option>
+					<option>Pillow Factory</option>
+					<option>Myundai</option>
+					<option>Myundai Car Store</option>
+					<option>Left-Mart</option>
+					<option>PetroChem Petrochemical Corporation</option>
+					<option>Mt. Useful</option>
+					<option>Satanâ€™s Anvil</option>
+					<option>Pest Bye</option>
+					<option>Mayo Clinic</option>
+					<option>John Ford Center for Alcoholic Cowboys</option>
+					<option>Rainier Wolfcastle's Mansion</option>
+					<option>Lithuania</option>
+					<option>Red Tick Beer Brewery</option>
+					<option>Prince House</option>
+					<option>Moab's</option>
+					<option>Semi-Painless Dentistry</option>
+					<option>Painless Dentistry</option>
+					<option>Lillie Langtry Theater</option>
+					<option>Shoes For Tots</option>
+					<option>Maryland</option>
+					<option>Hibbert Moneymaking Organization</option>
+					<option>Marital Stress Hotline</option>
+					<option>Homer and Mindy's Mansion</option>
+					<option>National Energy Convention</option>
+					<option>Madame Chao's</option>
+					<option>Samoa</option>
+					<option>Niue</option>
+					<option>Line Islands</option>
+					<option>New Zealand</option>
+					<option>Kingman Reef</option>
+					<option>Singapore</option>
+					<option>Malaysia</option>
+					<option>Papua New Guinea</option>
+					<option>Philippines</option>
+					<option>Paraguay</option>
+					<option>Rand McNally</option>
+					<option>Mars</option>
+					<option>Lisa's House (future)</option>
+					<option>Hungary</option>
+					<option>Iceland</option>
+					<option>Indonesia</option>
+					<option>Iran</option>
+					<option>Iraq</option>
+					<option>Jamaica</option>
+					<option>Jordan (country)</option>
+					<option>Kenya</option>
+					<option>Kiribati</option>
+					<option>Laos</option>
+					<option>Latvia</option>
+					<option>Lebanon</option>
+					<option>Libya</option>
+					<option>Madagascar</option>
+					<option>Micronesia</option>
+					<option>Monaco</option>
+					<option>Mongolia</option>
+					<option>Mozambique</option>
+					<option>Nepal</option>
+					<option>Pakistan</option>
+					<option>Panama</option>
+					<option>Poland</option>
+					<option>Polynesia</option>
+					<option>Portugal</option>
+					<option>Romania</option>
+					<option>Saudi Arabia</option>
+					<option>Serbia</option>
+					<option>Heathrow Teleport Departures</option>
+					<option>Montgomery Burns Institute For Soul Extraction</option>
+					<option>Pool Sharks</option>
+					<option>Lackluster Video</option>
+					<option>Little Ethiopia</option>
+					<option>Krusty Fried Chicken</option>
+					<option>Lion of Gojo Nightclub</option>
+					<option>Monoclecrafters</option>
+					<option>Johnson's Teleporters</option>
+					<option>Second-Best Western Hotel</option>
+					<option>Medieval Times</option>
+					<option>Moe's Apartment</option>
+					<option>Marriage Counseling</option>
+					<option>Painful Memories Party Supplies</option>
+					<option>Pressboard Estates (bus stop)</option>
+					<option>Industrial Road</option>
+					<option>Quack In The Box</option>
+					<option>Sit 'n' Weep</option>
+					<option>Psychiatry Row</option>
+					<option>Lugash's Gym</option>
+					<option>Music World</option>
+					<option>Korea Town</option>
+					<option>Old Abandoned Warehouse</option>
+					<option>Plastic Surgery Center</option>
+					<option>Shavings</option>
+					<option>Ice Bridge</option>
+					<option>Page's Pharmacy</option>
+					<option>Peanut Street Hotel</option>
+					<option>North Haverbrook Courthouse</option>
+					<option>Moe's Express</option>
+					<option>Pizzeria Cheapo</option>
+					<option>Odd Ones</option>
+					<option>Old Springfield Subway</option>
+					<option>Loose Chandeliers</option>
+					<option>Market</option>
+					<option>Little Ukraine</option>
+					<option>Naming Rights Available</option>
+					<option>Ice Cream</option>
+					<option>Home of the Braid</option>
+					<option>Nouveau Bitch</option>
+					<option>Markups & Spender</option>
+					<option>Nothing Under a Thousand</option>
+					<option>Puttering Barn</option>
+					<option>Shot In The Face Photo Studio</option>
+					<option>P.F. Wangs</option>
+					<option>Pillowmint Hotel</option>
+					<option>Neat & Tidy Piano Movers</option>
+					<option>Silicon Alley Strip Club</option>
+					<option>Merry Widow Insurance Co.</option>
+					<option>Homer's Land of Innermost Thoughts and Utmost Desires</option>
+					<option>Shameful Eddie's</option>
+					<option>Hardware (Bumtown)</option>
+					<option>Hardware (Downtown)</option>
+					<option>Lower East Side (bus stop)</option>
+					<option>Miami Airport</option>
+					<option>Miami Beach</option>
+					<option>North Korea</option>
+					<option>Kosovo</option>
+					<option>Kiev</option>
+					<option>Insane in the Ukraine</option>
+					<option>Hot to Trotsky's Ice-Skating Rink</option>
+					<option>S.N.P.P. Cafeteria</option>
+					<option>Linens-N-Such</option>
+					<option>Marvyn's</option>
+					<option>Onward Christian Schoolboys Academy</option>
+					<option>Rural Route 27</option>
+					<option>Pottering Barn</option>
+					<option>Princeton University</option>
+					<option>Hammock Hut</option>
+					<option>Hammocks Are Us</option>
+					<option>Put Your Butt There</option>
+					<option>Mary-Anne's Hammocks</option>
+					<option>Notre Dame of Springfield</option>
+					<option>Krusty's Mansion</option>
+					<option>Lenny's House</option>
+					<option>Jordan</option>
+					<option>Living tree</option>
+					<option>Occult section</option>
+					<option>Luck o' the Irish Wishing Well</option>
+					<option>Lake Tahoe</option>
+					<option>Nude-E-Mart</option>
+					<option>Lazy I Ranch</option>
+					<option>Nantucket</option>
+					<option>Simpson Laser Tag</option>
+					<option>Shelbyville Beach</option>
+					<option>Shelbyville Bird Sanctuary</option>
+					<option>Shelbyville Fertility Clinic</option>
+					<option>Shelbyville Downs</option>
+					<option>Shelbyville Hospital</option>
+					<option>Shelbyville Zoo</option>
+					<option>Shelbyville Car Impound Lot</option>
+					<option>Museum of Television and TV</option>
+					<option>Indian Burial Mound</option>
+					<option>Mickey Mao's</option>
+					<option>Nuclear Power Plant (Simpsons Road Rage)/References</option>
+					<option>Nuclear Power Plant (Simpsons Road Rage)/Quotes</option>
+					<option>Mental Institution</option>
+					<option>Krusty Burger Oil Rig</option>
+					<option>SeÃ±or Ding-Dong's Doorbell Fiesta</option>
+					<option>Joe's Diner</option>
+					<option>Nuclear Power Plant (Simpsons Road Rage)/Gags</option>
+					<option>Pudding on the Ritz</option>
+					<option>Island</option>
+					<option>Hiram Simpson's house</option>
+					<option>Johnny Fiestas</option>
+					<option>Museum of Suffering</option>
+					<option>Nudes Nudes Nudes</option>
+					<option>Mayor Quimby's mansion</option>
+					<option>Lisa Simpson Home for Abandoned Animals</option>
+					<option>Shelbyville Merchandise Mile</option>
+					<option>Palace</option>
+					<option>R</option>
+					<option>Montgomery Burns State Prison</option>
+					<option>Paradise Pier</option>
+					<option>National Bank of Springfield</option>
+					<option>Moeview Motel</option>
+					<option>Ned Flanders' Personal Hell</option>
+					<option>Rattlesnake Sanctuary</option>
+					<option>Mr. Burns' Summer Mansion</option>
+					<option>Hooters</option>
+					<option>Lotto 'N' Liquor</option>
+					<option>Krustyco Sweatshop</option>
+					<option>Hellman Avenue Medical Plaza</option>
+					<option>Home of Tomorrow</option>
+					<option>Photography</option>
+					<option>Mav's and Portia's house</option>
+					<option>Mav's and Portia's ski house</option>
+					<option>Li'l Ludwig's Music School</option>
+					<option>Iowa Non-International Airport</option>
+					<option>National Testing Center</option>
+					<option>Proctorville</option>
+					<option>Le Pamperie Hair Salon</option>
+					<option>Lake Placid</option>
+					<option>New Grand Canyon</option>
+					<option>Shelbyville Stadium</option>
+					<option>Protestant Heaven</option>
+					<option>Protestant Youth Festival</option>
+					<option>Old Springfield Mall</option>
+					<option>Le Petite AppÃ©tit</option>
+					<option>Mulberry Island</option>
+					<option>Mount Rushmore</option>
+					<option>Shlomo's Judaica</option>
+					<option>Palm Corners</option>
+					<option>Junkyard</option>
+					<option>Hemp City</option>
+					<option>Omni-Pave</option>
+					<option>Lombard Street</option>
+					<option>Lisa Land</option>
+					<option>Low Quality Inn</option>
+					<option>Inn</option>
+					<option>Sandy Beach</option>
+					<option>Motel</option>
+					<option>Just Rainsticks</option>
+					<option>Its a Wonderful Knife</option>
+					<option>Much Ado About Muffins!</option>
+					<option>My First Tattoo</option>
+					<option>Malaria Zone</option>
+					<option>Moe's Brewing Co.</option>
+					<option>Magic Palace</option>
+					<option>Sandals</option>
+					<option>Shell Shack</option>
+					<option>Madame and Masseur</option>
+					<option>Marrakech</option>
+					<option>Hot Dogs</option>
+					<option>Popcorn</option>
+					<option>Le Krusty Burger</option>
+					<option>Lego Land</option>
+					<option>Karate</option>
+					<option>Old Quarry</option>
+					<option>Holding Hands Point</option>
+					<option>Honey Me Mine</option>
+					<option>Shelbyville Nuclear Power Plant</option>
+					<option>Silicon Valley</option>
+					<option>Oil Refinery</option>
+					<option>Saks Fifth Grade</option>
+					<option>Li'l Chapel</option>
+					<option>One Size Fits All Lingerie</option>
+					<option>Simply Shoes</option>
+					<option>Plumbing Supplies</option>
+					<option>One Night Stan's</option>
+					<option>Sconewall Bakery</option>
+					<option>Hollywood</option>
+					<option>Los Angeles</option>
+					<option>Itchy's Glass-Blowing</option>
+					<option>Motel (Itchy & Scratchy)</option>
+					<option>Memory Recovery Institute</option>
+					<option>I Don't</option>
+					<option>Portland, Oregon</option>
+					<option>Riverdale</option>
+					<option>Origami Designs</option>
+					<option>Rat's Nest</option>
+					<option>Picture of Abe and Mona</option>
+					<option>Plant Operations Center</option>
+					<option>Myron's Sirens</option>
+					<option>Jackson's Klaxons</option>
+					<option>Phineas Q. Butterfat's Ice Cream Parlor</option>
+					<option>Oral Roberts University</option>
+					<option>Nowheresville</option>
+					<option>Nighthawk Diner</option>
+					<option>Mt. Useful Visitors Center</option>
+					<option>Repo Depot</option>
+					<option>Category:Characters</option>
+					<option>Springfield Nuclear Power Plant</option>
+					<option>Springfield</option>
+					<option>Springfield Elementary School</option>
+					<option>Springfield's State</option>
+					<option>Spittle County</option>
+					<option>Uncle Moe's Family Feedbag</option>
+					<option>Tibet Town</option>
+					<option>The Little Black Box</option>
+					<option>The Android's Dungeon & Baseball Card Shop</option>
+					<option>Springfield Bridge</option>
+					<option>Springfield Hydroelectric Dam</option>
+					<option>Springfield Town Square</option>
+					<option>Springfield Retirement Castle</option>
+					<option>Springfield International Airport</option>
+					<option>Springfield Drive-In</option>
+					<option>Springfield Monorail</option>
+					<option>VHS Village</option>
+					<option>Speed-E-Mart</option>
+					<option>South Street Squidport</option>
+					<option>The Simpsons Ride</option>
+					<option>Terror Lake</option>
+					<option>Stenchburg</option>
+					<option>Swartzwelder County</option>
+					<option>West Springfield</option>
+					<option>Category:Towns and cities</option>
+					<option>Springfield Community College</option>
+					<option>Springfield A&M</option>
+					<option>Springfield University</option>
+					<option>Category:Businesses</option>
+					<option>Springfield City Zoo</option>
+					<option>Ye Olde Candlemaker Shoppe</option>
+					<option>Springfield Police Department</option>
+					<option>Uncle Homer's Daycare Center</option>
+					<option>Springfield Juvenile Correctional Facility</option>
+					<option>Sprawl-Mart</option>
+					<option>Springfield Downs</option>
+					<option>West Springfield Elementary School</option>
+					<option>Springfield Box Factory</option>
+					<option>Springfield Heights Institute of Technology</option>
+					<option>Springfield National Forest</option>
+					<option>Springfield Heights</option>
+					<option>Spinster City Apartments</option>
+					<option>Springfield Mall</option>
+					<option>Springfield Town Hall</option>
+					<option>Springfield Park</option>
+					<option>Springfield Glacier</option>
+					<option>Category:Lakes</option>
+					<option>Springfield Concert Hall</option>
+					<option>Springfield Googolplex Theatres</option>
+					<option>Springfield Symphony Hall</option>
+					<option>Springfield Arts Center</option>
+					<option>Springfield County Court House</option>
+					<option>Springfield Cemetery</option>
+					<option>Springfield War Memorial Stadium</option>
+					<option>The Dew Drop Bar</option>
+					<option>Springfield Public Library</option>
+					<option>Springfield Plasma Center</option>
+					<option>Squeaky Farms Brand Genuine Animal Milk</option>
+					<option>Category:Public Facilities</option>
+					<option>Category:Medical and Health Facilities</option>
+					<option>Springfield Observatory</option>
+					<option>Springfield Tire Yard</option>
+					<option>Springfield Toxic Waste Dump</option>
+					<option>Springfield State Prison</option>
+					<option>Zesty's</option>
+					<option>Ye Olde Off-Ramp Inn</option>
+					<option>Category:Springfield Mall</option>
+					<option>Springfield County</option>
+					<option>Trader Earth's</option>
+					<option>Springfield Harbor</option>
+					<option>Springfield Lemon Tree</option>
+					<option>Springfield Gorge</option>
+					<option>The Vast Waistband</option>
+					<option>Springfield Mystery Spot</option>
+					<option>The Spaghetti Laboratory</option>
+					<option>Springfield Cemetery (Shorts)</option>
+					<option>Springfield Aquarium</option>
+					<option>Springfield Palace of Fine Arts</option>
+					<option>Skid Row</option>
+					<option>Statue of Jebediah Springfield</option>
+					<option>Springfield High School</option>
+					<option>You Forgot-Me-Nots</option>
+					<option>Spruce Caboose</option>
+					<option>Weenie Barn</option>
+					<option>Category:Natural Landmarks</option>
+					<option>Springfield Glen Country Club</option>
+					<option>Springwood Minimum Security Prison</option>
+					<option>Video Matchmaking</option>
+					<option>Thai Food Factory</option>
+					<option>Category:Springfield Elementary School</option>
+					<option>Try-N-Save</option>
+					<option>Suicide Notes</option>
+					<option>Toys "L" Us</option>
+					<option>Up, Up and Buffet!</option>
+					<option>Springfield General Hospital</option>
+					<option>Stu's Disco</option>
+					<option>Waverly Hills</option>
+					<option>The Great Tire Fire</option>
+					<option>Wuuf</option>
+					<option>Springfield Opera House</option>
+					<option>Wall E. Weasel's</option>
+					<option>Toys</option>
+					<option>Trees $60 and Up</option>
+					<option>X-Mas Trees Slightly Irregular</option>
+					<option>Tattoos</option>
+					<option>Springfield Primate Institute</option>
+					<option>Tenderfoot Gorge</option>
+					<option>Swimming Pool</option>
+					<option>Springfield Speedway</option>
+					<option>Springfield Sign</option>
+					<option>Victim's house</option>
+					<option>White House</option>
+					<option>Sox</option>
+					<option>UFO</option>
+					<option>Springfield Wax Museum</option>
+					<option>Springshire</option>
+					<option>Springfield Stadium</option>
+					<option>St. Jerome's Catholic School</option>
+					<option>Springfield Hardware Store</option>
+					<option>We Have Restrooms!</option>
+					<option>Trappuccino</option>
+					<option>Springfield Dam (Simpsons Road Rage)</option>
+					<option>Springfield Mountains (Simpsons Road Rage)</option>
+					<option>Springfield Knowledgeum</option>
+					<option>Springfield Skating Rink</option>
+					<option>Skates 'n' Such Ice Rink</option>
+					<option>Storytown Village</option>
+					<option>Springfield Post Office</option>
+					<option>Springfield Subway System</option>
+					<option>Springfield Stamp Museum</option>
+					<option>Springfield Wall of Fame</option>
+					<option>Category:Mountains</option>
+					<option>Springfield Police Station</option>
+					<option>Waynesport</option>
+					<option>Widow's Peak</option>
+					<option>Springfield Video Arcade</option>
+					<option>Stern Lecture Plumbing</option>
+					<option>Category:Countries</option>
+					<option>United States</option>
+					<option>Tern For The Wurst Delicatessen</option>
+					<option>Vancouver</option>
+					<option>Sweden</option>
+					<option>Weasel Island</option>
+					<option>Springfield Penitentiary</option>
+					<option>Tokyo</option>
+					<option>Springfield Railroad</option>
+					<option>Sleep-Eazy Motel</option>
+					<option>Springfield Animal Shelter</option>
+					<option>Springwarts School of Magicry</option>
+					<option>Springfield Airways</option>
+					<option>Tanzania</option>
+					<option>Totally Sick, Twisted, F***ed-Up Animation Festival</option>
+					<option>Treehouse of Horror XIII/Appearances</option>
+					<option>Springfield Dam</option>
+					<option>The Simpsons: Hit and Run - Level 1/Appearances</option>
+					<option>Springfield Convention Center</option>
+					<option>The Simpsons: Hit and Run - Level 2/Appearances</option>
+					<option>Springsonian Museum</option>
+					<option>Category:Streets in Springfield</option>
+					<option>Springfield Dinner Theater</option>
+					<option>Springfield Hall of Records</option>
+					<option>Springfield Animal Hospital</option>
+					<option>Springfield Community Center</option>
+					<option>Springfield YMCA</option>
+					<option>Springfield Historical Society</option>
+					<option>Springfield Municipal Building</option>
+					<option>Southern Cracker</option>
+					<option>Tahiti</option>
+					<option>Springfield Preparatory School</option>
+					<option>Category:Companies</option>
+					<option>Springfield Dump</option>
+					<option>Uruguay</option>
+					<option>Springfield Pet Cemetery</option>
+					<option>Category:Museums</option>
+					<option>Springfield Bowl</option>
+					<option>Category:Accommodations</option>
+					<option>Springfield Theater District</option>
+					<option>Category:Arcades and fun centers</option>
+					<option>Category:Schools and other educational facilities</option>
+					<option>Springfield Amphitheater</option>
+					<option>Springfield Donuts</option>
+					<option>Springfield Rent-a-Car</option>
+					<option>Wellness Foods</option>
+					<option>Category:Location stubs</option>
+					<option>Sportacus</option>
+					<option>The Java Server</option>
+					<option>U.S. Air Force Base</option>
+					<option>Skip's Diner</option>
+					<option>Category:Airports</option>
+					<option>Stoner's Pot Palace</option>
+					<option>Springfield Bachelor Apartments</option>
+					<option>The Wooly Bully</option>
+					<option>Skinner's House</option>
+					<option>Snuggler's Cove</option>
+					<option>Category:Stadiums</option>
+					<option>Suicide Bridge</option>
+					<option>Springfield Coliseum</option>
+					<option>Springfield Funeral Home</option>
+					<option>Springfield Monument Park</option>
+					<option>Springfield Arms</option>
+					<option>Springfield Hunting Supplies</option>
+					<option>Tommy Hillclimber</option>
+					<option>Woosterfield Hotel</option>
+					<option>The Springfield Inquisitor</option>
+					<option>Springfield Palace Hotel</option>
+					<option>Sprubway</option>
+					<option>Sprooklyn</option>
+					<option>Springfield Martial Arts Academy</option>
+					<option>Sprooklyn Bridge</option>
+					<option>Waterfront</option>
+					<option>Wee Monsieur</option>
+					<option>The Family Jewels</option>
+					<option>Springfield Botanical Gardens</option>
+					<option>Springfield Office of Unemployment</option>
+					<option>Springfield Naval Reserve Base</option>
+					<option>Waverly Hills Elementary School</option>
+					<option>Springfield Heights Promenade</option>
+					<option>Sweet Home Alabama</option>
+					<option>The Tam O'Shanter Connection</option>
+					<option>Texxon</option>
+					<option>Slide Factory</option>
+					<option>Unnamed district</option>
+					<option>State Legislature</option>
+					<option>Stockholm</option>
+					<option>Sydney</option>
+					<option>The Third Dimension</option>
+					<option>Springfield Museum of Natural History</option>
+					<option>The Slaughterhouse</option>
+					<option>Springfield Correctional Institute</option>
+					<option>The League of Extra Horny Gentleman</option>
+					<option>Springfield Atoms Stadium</option>
+					<option>Springfield Mountains</option>
+					<option>Springfield Beach</option>
+					<option>Teacher Holding Facility</option>
+					<option>Zip Zap and 'Za Pizza Arcade</option>
+					<option>Tuition Academy</option>
+					<option>Springfield Nature Preserve</option>
+					<option>Springfield Orphanage</option>
+					<option>Taylor House</option>
+					<option>Category:Houses with unknown addresses</option>
+					<option>Trent Steeles home</option>
+					<option>Stacy Lovell's House</option>
+					<option>The Rolling Stones Rock N' Roll Fantasy Camp</option>
+					<option>Category:Prisons</option>
+					<option>Springfield Women's Prison</option>
+					<option>Yuk-ingham Palace</option>
+					<option>Category:Homes</option>
+					<option>Category:States</option>
+					<option>Treehouse of Horror XXII/Appearances</option>
+					<option>Utility Basement B</option>
+					<option>Category:Counties</option>
+					<option>Category:Parks and recreational areas</option>
+					<option>The Creamatorium</option>
+					<option>Washington D.C</option>
+					<option>The Happy Earwig Motel</option>
+					<option>Category:Non-American Locations</option>
+					<option>Trout Hatchery</option>
+					<option>Category:American Locations</option>
+					<option>The Refuge of the Damned</option>
+					<option>Category:England</option>
+					<option>Solar Energy</option>
+					<option>The Graveyard of the Future</option>
+					<option>Category:Continents</option>
+					<option>Category:Mentioned Locations</option>
+					<option>Tonga</option>
+					<option>Thailand</option>
+					<option>South Pole Research Station</option>
+					<option>The Lofts at Springfield Elementary</option>
+					<option>University of Michigan</option>
+					<option>St. Beatles Cathedral</option>
+					<option>The Benny Hilton</option>
+					<option>Somalia</option>
+					<option>South Africa</option>
+					<option>Spain</option>
+					<option>Switzerland</option>
+					<option>Sudan</option>
+					<option>Syria</option>
+					<option>Tibet</option>
+					<option>Trinidad and Tobago</option>
+					<option>Tunisia</option>
+					<option>Turkey</option>
+					<option>Turkmenistan</option>
+					<option>Uganda</option>
+					<option>Ukraine</option>
+					<option>United Arab Erimates</option>
+					<option>Uzbekistan</option>
+					<option>Venezuela</option>
+					<option>Vietnam</option>
+					<option>Yemen</option>
+					<option>Zambia</option>
+					<option>Zimbabwe</option>
+					<option>Universal Studios</option>
+					<option>Ultranet</option>
+					<option>Springfield Cryogenic Facility</option>
+					<option>Zia's Ultranet Room</option>
+					<option>West Oak Street</option>
+					<option>Vulgari</option>
+					<option>The Loin King</option>
+					<option>Spellympic Village</option>
+					<option>Springfield Extension School</option>
+					<option>Teenage Pasteland</option>
+					<option>Starlight Motel</option>
+					<option>Springfield Lumber</option>
+					<option>Springfield Dry Cleaners</option>
+					<option>Top It Off</option>
+					<option>Stomach Staples Center</option>
+					<option>Styx and Stones Records</option>
+					<option>Springfield Buddhist Temple</option>
+					<option>Splitsville Icecream Sundaes</option>
+					<option>Category:Bus Stops</option>
+					<option>Two Guys From Kabul</option>
+					<option>The Kabuli Palow</option>
+					<option>Springfield Four Seasons</option>
+					<option>Springfield Laundromat</option>
+					<option>Suicidal Moron Pass</option>
+					<option>The Enchanted Snail</option>
+					<option>Vesuvius Pizza</option>
+					<option>Wicked Excess</option>
+					<option>The Picky Vegan</option>
+					<option>Tsarbucks</option>
+					<option>Skybucks</option>
+					<option>The Snub Club</option>
+					<option>Wedding Hall</option>
+					<option>U Tote</option>
+					<option>Towne Centre at Springfield Glenne</option>
+					<option>Category:Towne Centre at Springfield Glenne</option>
+					<option>UV</option>
+					<option>Spring Field Cleaner</option>
+					<option>Spiffany's</option>
+					<option>XO</option>
+					<option>Towne Centre Trolley</option>
+					<option>Smooches On The Beach</option>
+					<option>The Sole Provider</option>
+					<option>The Gridiron</option>
+					<option>SpringFace</option>
+					<option>Testoster-Zone</option>
+					<option>The Fifth Helping</option>
+					<option>Swapper Jack's</option>
+					<option>Springfield Public Pool</option>
+					<option>Springfield Fire Department</option>
+					<option>The Sharper Mark-Up</option>
+					<option>Swigmore University</option>
+					<option>T.V. (Shop)</option>
+					<option>The Prodigy Barn</option>
+					<option>World Wide Web</option>
+					<option>World Trade Center</option>
+					<option>Category:Camps</option>
+					<option>The Reality Channel</option>
+					<option>South Korea</option>
+					<option>File:Bart's Room.png</option>
+					<option>Ugli</option>
+					<option>The Big T Building</option>
+					<option>Veterans of One War</option>
+					<option>Winnipeg</option>
+					<option>Winnipeg Pharmacy</option>
+					<option>Springfield Creative Arts Academy</option>
+					<option>Springfield Episcopal Church</option>
+					<option>Victor's Secret</option>
+					<option>Tatters</option>
+					<option>The Bloated Liver</option>
+					<option>The Brushes are Coming, The Brushes are Coming</option>
+					<option>Category:One-time locations</option>
+					<option>Category:Cypress Creek</option>
+					<option>Swing Low Sweet Chariot</option>
+					<option>The Spend Zone</option>
+					<option>Springfield Youth Center</option>
+					<option>Category:Tourist attractions</option>
+					<option>Springfield Sperm Bank</option>
+					<option>Springfield Dog Park</option>
+					<option>Snowball II Municipal Cat Park</option>
+					<option>Category:Destroyed Locations</option>
+					<option>Slovakia</option>
+					<option>Spirograph Factory</option>
+					<option>Teejay's Zaymart</option>
+					<option>Category:Little Pwagmattasquarmsettport</option>
+					<option>Category:Factories</option>
+					<option>Springfield Place</option>
+					<option>Category:Beaches</option>
+					<option>Unknown Island</option>
+					<option>Category:The Simpsons Road Rage Locations</option>
+					<option>Springfield Mountains (Simpsons Road Rage)/References</option>
+					<option>Springfield Dam (Simpsons Road Rage)/References</option>
+					<option>Springfield Dam (Simpsons Road Rage)/Appearances</option>
+					<option>Springfield Dam (Simpsons Road Rage)/Quotes</option>
+					<option>Springfield County Fair</option>
+					<option>Slaughter House</option>
+					<option>Springfield Mountains (Simpsons Road Rage)/Quotes</option>
+					<option>Taj Mahal</option>
+					<option>Toys 'Ð¯' Us</option>
+					<option>Stardust Drive-In</option>
+					<option>The Gassy Knoll</option>
+					<option>Springfield Mountains (Simpsons Road Rage)/Appearances</option>
+					<option>Taj Mah-All-You-Can-Eat</option>
+					<option>Springfield Dam (Simpsons Road Rage)/Gags</option>
+					<option>Springfield National Park</option>
+					<option>Solvang</option>
+					<option>Virgil Simpson's house</option>
+					<option>Springfield Tide Pools</option>
+					<option>Springfield Mountains (Simpsons Road Rage)/Gags</option>
+					<option>Springfield Soccer Stadium</option>
+					<option>Vic Tayback Hotel & Casino</option>
+					<option>Springfield Children's Hospital</option>
+					<option>Springfield Cosmetic Surgery Clinic</option>
+					<option>You Thai Now</option>
+					<option>Category:Theaters</option>
+					<option>Springfield Elementary School and Prison</option>
+					<option>Skobo's</option>
+					<option>Upward Bound</option>
+					<option>The Cloth Napkin</option>
+					<option>Toupee Chalet</option>
+					<option>The Springfield Shopper Building</option>
+					<option>The Lonely Arms</option>
+					<option>Springfield Christian School</option>
+					<option>Springfield Maximum Security Prison</option>
+					<option>Springfield Police Academy</option>
+					<option>Springfield Folk Art Museum</option>
+					<option>Springfield Recreation Center</option>
+					<option>Springfield Gas</option>
+					<option>Wind Chimes</option>
+					<option>Springfield Playhouse</option>
+					<option>Sleazy Sam's Payday Loans</option>
+					<option>The Starlight Motel</option>
+					<option>Category:Gyms</option>
+					<option>Topless Models</option>
+					<option>Stor-U-Stuff</option>
+					<option>The Ritz-Carlton Hotel for Transients</option>
+					<option>Springfield Union Station</option>
+					<option>Springfield Hobby Shop</option>
+					<option>Springfield City Jail</option>
+					<option>Who's To Know Motel</option>
+					<option>Springfield Press Club</option>
+					<option>Snooze at 11</option>
+					<option>Springfield Dry Cleaner</option>
+					<option>SUV Superstore</option>
+					<option>Tongue-Kiss Point</option>
+					<option>The Helter Shelter</option>
+					<option>Stuckey's</option>
+					<option>Springfield Armory</option>
+					<option>World Headquarters</option>
+					<option>Springfield Squidport</option>
+					<option>The Needle Exchange</option>
+					<option>Springfield Costume Shop</option>
+					<option>Springfield Community Theater</option>
+					<option>Six Toe County Courthouse</option>
+					<option>The Royal Fart Inn</option>
+					<option>Six Toe County</option>
+					<option>Sycamore Avenue</option>
+					<option>Springfield's oldest redwood tree</option>
+					<option>Turban Outfitters</option>
+					<option>Category:Springfield Squidport</option>
+					<option>Snack Shack</option>
+					<option>The Elegant Scoundrel</option>
+					<option>Swanky Fish</option>
+					<option>Springfield Sports Arena</option>
+					<option>Springfield Magnet School</option>
+					<option>Springfield Inn</option>
+					<option>Steel Mill</option>
+					<option>Smoke Factory</option>
+					<option>Springfield Wetlands</option>
+					<option>YumÃ­ Ristorante</option>
+					<option>Ziff Mansion</option>
+					<option>Unincorporated part of Springfield</option>
+					<option>Victor/Victoria's</option>
+					<option>Village Apartments</option>
+					<option>Springfield Bus Station</option>
+					<option>Yogurt Nook</option>
+					<option>Springfield State Building</option>
+					<option>Springfield Performing Arts Center</option>
+					<option>Springfield Pet Shop</option>
+					<option>Ye Old Butcher Shoppe</option>
+					<option>Video Village</option>
+					<option>Stinking Fish Realty</option>
+					<option>Wed Lobster</option>
+					<option>Swell-Air Hotel</option>
+					<option>TNT Storage</option>
+					<option>The Peak Inn</option>
+					<option>Stuff-N-Hug</option>
+					<option>The Trading Post</option>
+					<option>Six Flags Over Krusty</option>
+					<option>Veterans From Unpopular Wars Hall</option>
+					<option>Woozy Canary Gold Mine</option>
+			</select>
 		</div>
 		<div class="selection">
 			
