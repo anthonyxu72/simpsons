@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="chosen_v1.1.0/chosen.jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="simpson.css">
 		<link rel="stylesheet" type="text/css" href="chosen_v1.1.0/chosen.css">
+		<script src="matrix.js"></script>
 	</head>
 	<body>
 		<img src="Homer_Simpson.jpg" alt="Homer Simpson" class="Homer_Simpson"></img>
@@ -23,11 +24,12 @@
 					$(".chosen-select").chosen().change(function(e, params){
  						var selectedChars = $(".chosen-select").chosen().val();
  						console.log(selectedChars);
+						searchCharacters(selectedChars)
 					});
 				});	
 			</script>
 			
-			<select data-placeholder="Choose a character..." style="width:250px;" multiple class="chosen-select">
+			<select data-placeholder="Choose a character..." style="width:250px;" multiple class="chosen-select" id="character">
 					<option value=""></option>
 					<option>'Blow the Horn' Kid</option>
 					<option>Charles Montgomery Burns</option>
@@ -39,9 +41,9 @@
 					<option>Horatio McCallister</option>
 					<option>Hans Moleman</option>
 					<option>Santa's Little Helper</option>
-					<option>Bart Simpson</option>
-					<option>Lisa Simpson</option>
-					<option>Marge Simpson</option>
+					<option value="Bart Simpson">Bart Simpson</option>
+					<option value="Lisa Simpson">Lisa Simpson</option>
+					<option value="Marge Simpson">Marge Simpson</option>
 					<option>Seymour Skinner</option>
 					<option>Milhouse Van Houten</option>
 					<option>Clancy Wiggum</option>
@@ -294,7 +296,7 @@
 					<option>Dr. Octopus</option>
 					<option>Brody McKenna</option>
 					<option>Alaska Nebraska</option>
-					<option>Maggie Simpson</option>
+					<option value="Maggie_Simpson">Maggie Simpson</option>
 					<option>Alex Whitney</option>
 					<option>Elizabeth Hoover</option>
 					<option>Edna Krabappel</option>
@@ -951,47 +953,12 @@
 					<option>Sundance Kid</option>
 					<option>Lou (cow)</option>
 					<option>The Great Raymondo</option>
-					<option>Homer Simpson</option>
+					<option value="Homer Simpson">Homer Simpson</option>
 				</select>
-		</div>
-		<div class= "season">
-			Choose a season:
-			<select data-placeholder="Choose a season..." style="width:150px;" class="chosen-season">  
-						<option value=""></option>
-		            <option>Season 1</option>
-		            <option>Season 2</option>
-		            <option>Season 3</option>
-		            <option>Season 4</option>
-		            <option>Season 5</option>
-		            <option>Season 6</option>
-		            <option>Season 7</option>
-		            <option>Season 8</option>
-		            <option>Season 9</option>
-		            <option>Season 10</option>
-		            <option>Season 11</option>
-		            <option>Season 12</option>
-		            <option>Season 13</option>
-		            <option>Season 14</option>
-		            <option>Season 15</option>
-		            <option>Season 16</option>
-		            <option>Season 17</option>
-		            <option>Season 18</option>
-		            <option>Season 19</option>
-		            <option>Season 20</option>
-		            <option>Season 21</option>
-		            <option>Season 22</option>
-		            <option>Season 23</option>
-		            <option>Season 24</option>
-						<option>Season 25</option>
-			</select>
 		</div>
 		<div class="locations">
 			<select data-placeholder="Choose a location..." style="width:250px;" multiple class="chosen-select"></select>
 		</div>
-		<div class="selection">
-			
-		</div>
-		<!-- <script src="test.js"></script> -->
 		<script src="visual.js"></script>
 	</body>
 </html>

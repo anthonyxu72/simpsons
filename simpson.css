@@ -45,7 +45,7 @@ div.locations{
 
 svg{
 	position:absolute;
-	top:300px;
+	top:403px;
 }
 
 .node rect {
@@ -64,4 +64,10 @@ svg{
 }
 .link:hover {
   stroke-opacity: .5;
+}
+
+button{
+	position: absolute;
+	left:1100px;
+	top: 250px;
 }
