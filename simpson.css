@@ -35,6 +35,12 @@ div.locations{
 	left: 550px;
 }
 
+div.charPane{
+	position: absolute;
+	left: 800px;
+	width: 200px;
+	height: 400px;
+}
 .selection{
 	position: absolute;
 	border: 1px solid black;
