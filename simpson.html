@@ -9,24 +9,25 @@
 		<script type="text/javascript" src="chosen_v1.1.0/chosen.jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="simpson.css">
 		<link rel="stylesheet" type="text/css" href="chosen_v1.1.0/chosen.css">
-		<script src="matrix.js"></script>
+		<script src="matrix.js"></script>		
+		<script type="text/javascript" src="./characters2.js"></script>
 	</head>
 	<body>
+		<script src="matrix.js"></script>
 		<img src="Homer_Simpson.jpg" alt="Homer Simpson" class="Homer_Simpson"></img>
 		<img src="Marge_Simpson.gif" alt="Marge Simpson" class="Marge_Simpson"></img>
 		<img src="Bart_Simpson.jpg" alt="Bart Simpson" class="Bart_Simpson"></img>
 		<img src="Lisa_Simpson.jpeg" alt="Lisa Simpson" class="Lisa_Simpson"></img>
 		<img src="Maggie_Simpson.jpeg" alt="Maggie Simpson" class="Maggie_Simpson"></img>		<div class="About">			<button style="left: 400px; top: 10px;" onclick="location.href='http://evankreft.com/about.html'">About</button>		</div>
 		<div class="character">
-			<script type="text/javascript">
+			<script type="text/javascript">								
 				$(function(){
     				$(".chosen-select").chosen({ max_selected_options: 5 });
 					$(".chosen-select").chosen().change(function(e, params){
  						var selectedChars = $(".chosen-select").chosen().val();
- 						console.log(selectedChars);
-						searchCharacters(selectedChars)
+						searchCharacters(selectedChars)						for (var charKey in characters) {							if (characters[charKey].name == selectedChars[selectedChars.length -1]) {								if (characters[charKey].image != null) {									$('#charImg img').attr('src', characters[charKey].image);								}															}						}						$('#charName').html(selectedChars[selectedChars.length -1]);				
 					});
-				});	
+				});				
 			</script>
 			
 			<select data-placeholder="Choose a character..." style="width:250px;" multiple class="chosen-select" id="character">
@@ -2482,7 +2483,10 @@
 					<option>Veterans From Unpopular Wars Hall</option>
 					<option>Woozy Canary Gold Mine</option>
 			</select>
-		</div>
+		</div>				
+		<div class= "charPane">			
+			<div id="charName"></div>			
+			<div id="charImg"><img src=""></div>		</div>		
 		<script src="visual.js"></script>
 	</body>
 </html>

@@ -35,6 +35,12 @@ div.locations{
 	left: 550px;
 }
 
+div.charPane{
+	position: absolute;
+	left: 800px;
+	width: 200px;
+	height: 400px;
+}
 .selection{
 	position: absolute;
 	border: 1px solid black;
@@ -43,11 +49,15 @@ div.locations{
 	left: 800px;
 }
 
-svg{
+svg.sankey{
 	position:absolute;
 	top:403px;
 }
 
+svg.heatmap{
+	position:absolute;
+	top:1500px;
+}
 .node rect {
   cursor: move;
   fill-opacity: .9;
@@ -70,4 +80,39 @@ button{
 	position: absolute;
 	left:1100px;
 	top: 250px;
+}
+
+div.tooltip {  
+	position: absolute;
+	z-index: 2;
+	border-radius: 3px;
+	padding: .25em;
+	font-size: 12px;
+	font-family: Arial,sans-serif;
+	opacity: 0;
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	border: 1px solid rgba(0,0,0,.4);
+	margin-left: 1em;
+	margin-top: -1em;	
+}
+
+.label{
+	position: absolute;
+	z-index: 2;
+	border-radius: 3px;
+	padding: .25em;
+	font-size: 12px;
+	font-family: Arial,sans-serif;
+	opacity: 0;
+	background: rgba(0,0,0,1.0);
+	color: #fff;
+	border: 1px solid rgba(0,0,0,.4);
+	margin-left: 6em;
+	margin-top: 1em;
+	white-space: nowrap;	
+}	
+
+.moveAble{
+	position:absolute;
 }

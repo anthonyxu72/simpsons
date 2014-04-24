@@ -1,6 +1,6 @@
 function searchCharacters(chars) {
 	console.log(chars)
-	d3.select("svg").remove();
+	d3.select("svg.sankey").remove();
 	var characterMatrixArray = {};
 	var nodesArray = new Array();
 	var linksArray = new Array();
@@ -40,6 +40,7 @@ function draw_viz(array){
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
 					.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+					.attr("class", "sankey")
 	
 	var sankey = d3.sankey()
 						.nodeWidth(36)
@@ -52,14 +53,34 @@ function draw_viz(array){
 	   .nodes(array.nodes)
 	   .links(array.links)
 	   .layout(32);
-	
+		
+	var div = d3.select("body").append("div")
+			    .attr("class", "tooltip")
+				.attr("class", "label")
+			    .style("opacity",0)
+				 .attr("class","moveAble");
+				
 	var link = svg.append("g").selectAll(".link")
 		      .data(array.links)
 		    .enter().append("path")
 		      .attr("class", "link")
 		      .attr("d", path)
 		      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-		      .sort(function(a, b) { return b.dy - a.dy; });
+		      .sort(function(a, b) { return b.dy - a.dy; })
+				.on("mouseover", function(d){
+					div.transition()
+						.duration(500)
+						.style("opacity",9);
+					div.html("Episodes: " + d.value)
+						.style("left", "800px")
+						.style("bottom", "100px")
+				})
+				.on("mouseout", function(d){
+		   		div.transition()
+					.duration(500)
+					.style("opacity",0);
+				})
+				
 	
 	link.append("title")
 	      .text(function(d) {
@@ -116,3 +137,11 @@ function draw_viz(array){
 					    link.attr("d", path);
 					  }
 }
+
+var characters = [];
+d3.json("characters.js", function(data){
+	for(var i in data){
+		characters.push(data[i]["name"])
+	}
+	console.log(characters)
+})
